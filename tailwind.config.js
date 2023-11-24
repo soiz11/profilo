@@ -30,6 +30,31 @@ module.exports = {
 
       'sm': {'max': '639px'},
       },
+
+      keyframes: {
+        'switching': {
+          '0%': {
+            transform: 'translateY(0)',
+          },
+          '40%': {
+            transform: 'translateY(-100%)',
+          },
+          '50%': {
+            transform: 'translateY(-100%)',
+          },
+          '90%': {
+            transform: 'translateY(-200%)',
+          },
+          '100%': {
+            transform: 'translateY(-200%)',
+          },
+        },
+      },
+
+      animation:{
+        'switching': 'switching 6s ease-in infinite alternate'
+      }
+      
     },
   },
   plugins: [],

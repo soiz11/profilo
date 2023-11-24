@@ -9,3 +9,10 @@ body {
   background-color:#ededed;
     
 }
+
+
+@layer utilities {
+  .box-custom {
+    @apply flex-1 bg-transparent w-[100%] h-[100%] text-[20px] py-3  flex items-center; 
+  }
+} 
