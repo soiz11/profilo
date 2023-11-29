@@ -51,7 +51,7 @@ const Projects = () => {
         { myprojects.map((myproject,index)=>(
             <div key={index} className='flex flex-col h-[fit-content]  bg-[#ededed] border-4 shadow-lg rounded-lg border-[white] w-[80vw] overflow-hidden pb-2 group mb-9 '>
             <div className=' h-[200px] xs:h-[250px]  w-[100%] relative rounded flex md:h-[0] md:group-hover:h-[300px] xl:group-hover:h-[350px] duration-1000 '>
-                <div  onClick={() => handleButtonClick(myproject)} className=' rounded absolute z-10 bottom-2 opacity-0 group-hover:opacity-100 group-hover:bottom-6 duration-1000  right-6 md:right-10 px-8 py-2 bg-[black] text-[white] border-[3px] text-[18px] border-[white] cursor-pointer' >Dive to the Github</div>
+            <div  onClick={() => handleButtonClick(creation)} className=' rounded absolute z-10 bottom-4 right-4 md:right-10 md:bottom-6 md:px-8 md:py-2 bg-[black] text-[white] md:border-[3px] border-[2px] md:text-[18px] md:group-hover:opacity-100 duration-1000  md:opacity-0 text-[10px] px-4 py-1 border-[white] cursor-pointer' >Dive to the Github</div>
                 <video src={require('../../../public/vid.mp4')}  width="100%" height="100%" loop muted autoPlay className='object-cover brightness-55 p-2 group-hover:shadow-lg'/>
             </div>
                 <div className='flex mt-2'>
