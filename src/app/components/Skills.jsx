@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Image from 'next/image';
 import reactim from "../../../public/react.png"
 import nextim from "../../../public/next.png"
@@ -11,7 +11,7 @@ import figmaim from "../../../public/figma.png"
 import psim from "../../../public/ps.png"
 import flutterim from "../../../public/flutter.png"
 
-const Skills = () => {
+const Skills = forwardRef((props, skillsRef) => {
     const mixers = [
         {
           "name": "ReactJS",
@@ -69,7 +69,7 @@ const Skills = () => {
        <>
        <div className="w-[80vw]">
         <div className="flex my-10 w-[100%] items-center mb-10 mt-14">
-            <div className="text-[22px] flex font-[600] mr-5">Skills</div>
+            <div ref={skillsRef} className="text-[22px] flex font-[600] mr-5">Skills</div>
             <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
         </div>
 
@@ -99,5 +99,5 @@ const Skills = () => {
       </>
   )
 }
-
+)
 export default Skills

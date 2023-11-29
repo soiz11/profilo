@@ -1,12 +1,13 @@
 'use client'
 import Image from 'next/image';
-import React from 'react'
+import React,{forwardRef} from 'react'
 import bw from "../../../public/bloggerworld.png"
-import stationary from "../../../public/stationary.png"
+import angle from "../../../public/logo1.jpg"
+import fox from "../../../public/logo2.jpg"
 
 //import vid from "../../../public/vid.mp4"
 
-const Content = () => {
+const Content =  forwardRef((props, contentsRef) => {
      
     const handleButtonClick = (creation) => {
         window.open(creation.url, '_blank');
@@ -15,17 +16,17 @@ const Content = () => {
     const creations = [
         {
           "name": "Angle Theeta",
-          "url": "https://github.com/soiz11/social-media-application.git",
-          "description":"A blogger website using MERN stack with redux. The backend is completed with a solid foundation. Currently,focused on crafting an inatative frontend and connecting it to the backend",
+          "url": "https://www.youtube.com/@angletheeta",
+          "description":"Discover the world of mathematics with Angle Theeta! Our channel is your guide to mastering advanced mathematics, whether you're studying for Ordinary or Advanced Levels. We specialize in practical math, covering 95% of applied mathematics concepts and completing lessons on pure mathematics, like integration. Our content is tailored for students at various levels, and we offer supportive playlists for different learning approaches. Stay tuned as we explore probability and statistics soon! Angle Theeta is more than just lessons; it's a community making math accessible and enjoyable. Subscribe now for a straightforward and engaging approach to advanced mathematics!",
           "vlink":"",
-          "imgurl":bw
+          "imgurl":angle
         },
         {
             "name": "Fox Make",
-            "url": "https://github.com/soiz11/smart-fiton.git",
-            "description":"Smart Try On is the final year group project that involves creating a multi vendor app using Flutter,Firebase and Python. The app include a unique smart try on feature using augmented reality (AR)",
+            "url": "https://www.youtube.com/@FoxMake",
+            "description":"Welcome to Fox Make, your guide to understanding IT without the jargon! Designed for those new to IT, our channel helps you navigate tech essentials in your daily life. We start with the basics and gradually explore more technical topics, making IT easy to grasp. Fox Make is committed to simplifying complex concepts, making them accessible to everyone. As we grow, expect deeper technical insights that enrich your IT knowledge. Subscribe now to Fox Make, where we bridge the gap between everyday users and the world of information technology, making it simple and engaging!",
             "vlink":"",
-            "imgurl":stationary
+            "imgurl":fox
         },
        
      
@@ -36,7 +37,7 @@ const Content = () => {
     <>
        <div className="w-[80vw]">
         <div className="flex my-10 w-[100%] items-center mb-10 mt-5">
-            <div className="text-[22px] flex font-[600] mr-5">Content Creation</div>
+            <div ref={contentsRef} className="text-[22px] flex font-[600] mr-5">Content Creation</div>
             <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
         </div>
         </div>
@@ -56,7 +57,7 @@ const Content = () => {
                 <div className='flex mt-2 p-[16px]'>
                     <div className='flex flex-col px-[10px] w-[100%]'>
                         {/* <div className='font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px]'>{creation.name}</div> */}
-                        <div className='text-[10px] pb-3 xs:text-[12px] md:text-[16px] xl:text-[18px] text-[#5a5f61] flex pt-[30px]'>{creation.description}</div>
+                        <div className='text-[10px] pb-3 xs:text-[12px] md:text-[14px] xl:text-[16px] text-[#5a5f61] flex pt-[30px]'>{creation.description}</div>
                     </div>
                 </div>
             </div> 
@@ -65,6 +66,6 @@ const Content = () => {
         }
      </>
   )
-}
+})
 
 export default Content

@@ -1,12 +1,12 @@
 'use client'
 import Image from 'next/image';
-import React from 'react'
+import React, {forwardRef} from 'react'
 import bw from "../../../public/bloggerworld.png"
 import stationary from "../../../public/stationary.png"
 
 //import vid from "../../../public/vid.mp4"
 
-const Projects = () => {
+const Projects = forwardRef((props, projectsRef) => {
      
     const handleButtonClick = (myproject) => {
         window.open(myproject.url, '_blank');
@@ -43,7 +43,7 @@ const Projects = () => {
     <>
        <div className="w-[80vw]">
         <div className="flex my-10 w-[100%] items-center mb-10 mt-5">
-            <div className="text-[22px] flex font-[600] mr-5">Projects</div>
+            <div ref={projectsRef} className="text-[22px] flex font-[600] mr-5">Projects</div>
             <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
         </div>
         </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                     </div>
                     <div className='flex flex-col px-[10px] w-[85%]'>
                         <div className='font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px]'>{myproject.name}</div>
-                        <div className='text-[10px] pb-3 xs:text-[12px] md:text-[16px] xl:text-[18px] text-[#5a5f61] flex'>{myproject.description}</div>
+                        <div className='text-[10px] pb-3 xs:text-[12px] md:text-[14px] xl:text-[16px] text-[#5a5f61] flex'>{myproject.description}</div>
                     </div>
                 </div>
             </div> 
@@ -69,6 +69,6 @@ const Projects = () => {
         }
      </>
   )
-}
+})
 
 export default Projects
