@@ -1,15 +1,15 @@
 import React, { forwardRef } from 'react'
 import Image from 'next/image';
-import reactim from "../../../public/react.png"
-import nextim from "../../../public/next.png"
-import tailwindim from "../../../public/tailwind.png"
-import nodeim from "../../../public/node.png"
-import postmanim from "../../../public/postman.png"
-import firebaseim from "../../../public/firebase.png"
-import mongoim from "../../../public/mongodb.png"
-import figmaim from "../../../public/figma.png"
-import psim from "../../../public/ps.png"
-import flutterim from "../../../public/flutter.png"
+import reactim from "../../../public/react.webp"
+import nextim from "../../../public/next.webp"
+import tailwindim from "../../../public/tailwind.webp"
+import nodeim from "../../../public/node.webp"
+import postmanim from "../../../public/postman.webp"
+import firebaseim from "../../../public/firebase.webp"
+import mongoim from "../../../public/mongodb.webp"
+import figmaim from "../../../public/figma.webp"
+import psim from "../../../public/ps.webp"
+import flutterweb from "../../../public/flutter.webp"
 
 const Skills = forwardRef((props, skillsRef) => {
     const mixers = [
@@ -30,7 +30,7 @@ const Skills = forwardRef((props, skillsRef) => {
         },
         {
            "name": "Flutter",
-           "url": flutterim,
+           "url": flutterweb,
            "amount":70
         },
         {

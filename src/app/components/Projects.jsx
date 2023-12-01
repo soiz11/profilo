@@ -1,8 +1,9 @@
 'use client'
 import Image from 'next/image';
 import React, {forwardRef} from 'react'
-import bw from "../../../public/bloggerworld.png"
-import stationary from "../../../public/stationary.png"
+import bw from "../../../public/bloggerworld.webp"
+import stationary from "../../../public/stationary.webp"
+import pik from "../../../public/pik.webp"
 
 //import vid from "../../../public/vid.mp4"
 
@@ -25,7 +26,7 @@ const Projects = forwardRef((props, projectsRef) => {
             "url": "https://github.com/soiz11/smart-fiton.git",
             "description":"Smart Try On is the final year group project that involves creating a multi vendor app using Flutter,Firebase and Python. The app include a unique smart try on feature using augmented reality (AR)",
             "vlink":"",
-            "imgurl":stationary
+            "imgurl":pik
         },
         {
             "name": "ITUM Stationary Management System",
@@ -51,8 +52,8 @@ const Projects = forwardRef((props, projectsRef) => {
         { myprojects.map((myproject,index)=>(
             <div key={index} className='flex flex-col h-[fit-content]  bg-[#ededed] border-4 shadow-lg rounded-lg border-[white] w-[80vw] overflow-hidden pb-2 group mb-9 '>
             <div className=' h-[200px] xs:h-[250px]  w-[100%] relative rounded flex md:h-[0] md:group-hover:h-[300px] xl:group-hover:h-[350px] duration-1000 '>
-            <div  onClick={() => handleButtonClick(creation)} className=' rounded absolute z-10 bottom-4 right-4 md:right-10 md:bottom-6 md:px-8 md:py-2 bg-[black] text-[white] md:border-[3px] border-[2px] md:text-[18px] md:group-hover:opacity-100 duration-1000  md:opacity-0 text-[10px] px-4 py-1 border-[white] cursor-pointer' >Dive to the Github</div>
-                <video src={require('../../../public/vid.mp4')}  width="100%" height="100%" loop muted autoPlay className='object-cover brightness-55 p-2 group-hover:shadow-lg'/>
+            <div  onClick={() => handleButtonClick(myproject)} className=' rounded absolute z-10 bottom-4 right-4 md:right-10 md:bottom-6 md:px-8 md:py-2 bg-[black] text-[white] md:border-[3px] border-[2px] md:text-[18px] md:group-hover:opacity-100 duration-1000  md:opacity-0 text-[10px] px-4 py-1 border-[white] cursor-pointer' >Dive to the Github</div>
+                <Image src={myproject.imgurl}  width="100%" height="100%" loop muted autoPlay className='object-cover brightness-55 p-2 group-hover:shadow-lg'/>
             </div>
                 <div className='flex mt-2'>
                     <div className='hidden md:w-[15%] md:flex md:px-2 md:group-hover:w-[0] duration-1000'>

@@ -1,6 +1,6 @@
 import React, {forwardRef} from 'react'
 import Image from 'next/image';
-import myimg from "../../../public/web_img.png"
+import myimg from "../../../public/web_img.webp"
 import myimg2 from "../../../public/vercel.svg"
 import Slider from './Slider';
 import Namecard from './Namecard';

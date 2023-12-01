@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image';
 import React,{forwardRef} from 'react'
-import bw from "../../../public/bloggerworld.png"
-import angle from "../../../public/logo1.jpg"
-import fox from "../../../public/logo2.jpg"
+import bw from "../../../public/bloggerworld.webp"
+import angle from "../../../public/logo1.webp"
+import fox from "../../../public/logo2.webp"
 
 //import vid from "../../../public/vid.mp4"
 
@@ -18,14 +18,14 @@ const Content =  forwardRef((props, contentsRef) => {
           "name": "Angle Theeta",
           "url": "https://www.youtube.com/@angletheeta",
           "description":"Discover the world of mathematics with Angle Theeta! Our channel is your guide to mastering advanced mathematics, whether you're studying for Ordinary or Advanced Levels. We specialize in practical math, covering 95% of applied mathematics concepts and completing lessons on pure mathematics, like integration. Our content is tailored for students at various levels, and we offer supportive playlists for different learning approaches. Stay tuned as we explore probability and statistics soon! Angle Theeta is more than just lessons; it's a community making math accessible and enjoyable. Subscribe now for a straightforward and engaging approach to advanced mathematics!",
-          "vlink":"",
+          "vlink":"/angle.mp4",
           "imgurl":angle
         },
         {
             "name": "Fox Make",
             "url": "https://www.youtube.com/@FoxMake",
             "description":"Welcome to Fox Make, your guide to understanding IT without the jargon! Designed for those new to IT, our channel helps you navigate tech essentials in your daily life. We start with the basics and gradually explore more technical topics, making IT easy to grasp. Fox Make is committed to simplifying complex concepts, making them accessible to everyone. As we grow, expect deeper technical insights that enrich your IT knowledge. Subscribe now to Fox Make, where we bridge the gap between everyday users and the world of information technology, making it simple and engaging!",
-            "vlink":"",
+            "vlink":"/fox.mp4",
             "imgurl":fox
         },
        
@@ -52,7 +52,7 @@ const Content =  forwardRef((props, contentsRef) => {
                     </div>
                     <div  className='font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px] flex items-end pl-2'>{creation.name}</div>
                 </div>
-                <video src={require('../../../public/vid.mp4')}  width="100%" height="100%" loop muted autoPlay className='object-cover brightness-55 p-2 group-hover:shadow-lg'/>
+                <video src={creation.vlink}  width="100%" height="100%" loop muted autoPlay className='object-cover brightness-55 p-2 group-hover:shadow-lg'/>
             </div>
                 <div className='flex mt-2 p-[16px]'>
                     <div className='flex flex-col px-[10px] w-[100%]'>

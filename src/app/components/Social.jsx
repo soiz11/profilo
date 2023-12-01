@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import wpp from "../../../public/whatsapp.png"
-import mail from "../../../public/mail.png"
-import linked from "../../../public/linkedin.png"
-import git from "../../../public/github.png"
-import ytube from "../../../public/youtube.png"
+import wpp from "../../../public/whatsapp.webp"
+import mail from "../../../public/mail.webp"
+import linked from "../../../public/linkedin.webp"
+import git from "../../../public/github.webp"
+import ytube from "../../../public/youtube.webp"
 
 const medias = [
     {
