@@ -2,7 +2,7 @@ import React,{forwardRef} from 'react'
 import Image from 'next/image';
 import logo from "../../../public/sohan.webp"
 
-const Navigation = forwardRef(({ scrollToSection, aboutRef, skillsRef, projectsRef, NavigationsRef }) => {
+const Navigation = forwardRef(({ scrollToSection, aboutRef, skillsRef, projectsRef,  contentsRef }) => {
 
     const sections = [
         {
@@ -18,8 +18,8 @@ const Navigation = forwardRef(({ scrollToSection, aboutRef, skillsRef, projectsR
           "url": projectsRef
         },
         {
-          "name": "Navigation Creation",
-          "url": NavigationsRef
+          "name": "Content Creation",
+          "url":  contentsRef
         },
        
       ]
