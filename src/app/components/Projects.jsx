@@ -24,7 +24,7 @@ const Projects = forwardRef((props, projectsRef) => {
         {
             "name": "Smart Try On App (PIKDY)",
             "url": "https://github.com/soiz11/smart-fiton.git",
-            "description":"Smart Try On is the final year group project that involves creating a multi vendor app using Flutter,Firebase and Python. The app include a unique smart try on feature using augmented reality (AR)",
+            "description":"Smart Try On is the final year group project that involves creating a multi vendor app using Flutter, Firebase and Python. The app include a unique smart try on feature using augmented reality (AR)",
             "vlink":"",
             "imgurl":pik
         },
@@ -60,7 +60,7 @@ const Projects = forwardRef((props, projectsRef) => {
                         <Image src={myproject.imgurl} className='w-[100%] h-[100%] object-cover'/>
                     </div>
                     <div className='flex flex-col px-[10px] w-[85%]'>
-                        <div className='font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px]'>{myproject.name}</div>
+                        <div className='font-[500] py-3 text-[18px] xs:text-[20px] md:text-[22px]'>{myproject.name}</div>
                         <div className='text-[10px] pb-3 xs:text-[12px] md:text-[14px] xl:text-[16px] text-[#5a5f61] flex'>{myproject.description}</div>
                     </div>
                 </div>

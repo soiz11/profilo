@@ -52,10 +52,21 @@ module.exports = {
             transform: 'translateY(-120px)',
           },
         },
+
+        'loading':{
+          '0%':{
+            width:'0%',
+          },
+          '100%':{
+            width:'100%',
+          },
+        }
       },
 
       animation:{
-        'switching': 'switching 6s ease-out infinite alternate'
+        'switching': 'switching 6s ease-out infinite alternate',
+        'loading':'loading 3s cubic-bezier(0.4, 0, 0.2, 1) forwards'
+
       }
       
     },
