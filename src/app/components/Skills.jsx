@@ -73,7 +73,7 @@ const Skills = forwardRef((props,skillsRef) => {
             <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:place-content-between xs:gap-5 gap-x-10 md:gap-x-14 sm:gap-x-12 " >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:place-Skills-between xs:gap-5 gap-x-10 md:gap-x-14 sm:gap-x-12 " >
 
         {mixers.map((mixer, index) => (
 
@@ -100,4 +100,7 @@ const Skills = forwardRef((props,skillsRef) => {
   )
 }
 )
+
+Skills.displayName = 'Skills';
+
 export default Skills

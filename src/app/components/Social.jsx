@@ -38,11 +38,12 @@ const Social = () => {
     <div className='flex justify-between w-[80%] mt-4 xs:mt-5'>
         { medias.map((media,index)=>(
             <Link href={media.url} target="_blank" key={index} className='flex items-center justify-center h-[20px] w-[20px] xs:h-[25px] xs:w-[25px] sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px] rounded-full bg-[#ededed] shadow-xl border-2 border-[white]'>
-                <Image src={media.name} className='w-[10px] xs:w-[15px] h-[10px] sm:w-[20px] xs:h-[15px] sm:h-[20px] lg:w-[30px] lg:h-[30px]'/>
+                <Image alt='' src={media.name} className='w-[10px] xs:w-[15px] h-[10px] sm:w-[20px] xs:h-[15px] sm:h-[20px] lg:w-[30px] lg:h-[30px]'/>
             </Link>
         ))}
     </div>
   )
 }
 
+Social.displayName = 'Social';
 export default Social

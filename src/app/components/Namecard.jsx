@@ -17,4 +17,6 @@ const Namecard = () => {
   )
 }
 
+Namecard.displayName = 'Namecard';
+
 export default Namecard

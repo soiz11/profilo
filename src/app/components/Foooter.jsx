@@ -8,4 +8,6 @@ const Foooter = () => {
     )
 }
 
+Foooter.displayName = 'Foooter';
+
 export default Foooter

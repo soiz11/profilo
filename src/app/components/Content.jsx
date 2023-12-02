@@ -48,7 +48,7 @@ const Content =  forwardRef((props, contentsRef) => {
                 <div  onClick={() => handleButtonClick(creation)} className=' rounded absolute z-10 bottom-[-8px] right-4 shadow-md md:right-10 md:bottom-6 md:px-8 md:py-2 bg-[black] text-[white]  border-[2px] md:text-[18px] text-[10px] px-2 py-1 border-[white] cursor-pointer' >Visit Channel</div>
                 <div className='xxs:flex  none absolute z-10 bottom-[0px] left-4 translate-y-[48%]'>
                     <div  onClick={() => handleButtonClick(creation)} className=' rounded-full shadow-md md:right-10 md:bottom-6  bg-[white] md:border-[4px] border-[2px]  border-[white] cursor-pointer xxs:h-[100px] xxs:w-[100px] w-[0px] h-[0px] overflow-hidden ' >
-                        <Image src={creation.imgurl} className='xxs:w-[100%] xxs:h-[100%] w-[0%] h-[0%] object-cover '/>
+                        <Image alt="" src={creation.imgurl} className='xxs:w-[100%] xxs:h-[100%] w-[0%] h-[0%] object-cover '/>
                     </div>
                     <div  className='xxs:mt-0 mt-[50px] font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px] flex items-end pl-2'>{creation.name}</div>
                 </div>
@@ -67,5 +67,7 @@ const Content =  forwardRef((props, contentsRef) => {
      </>
   )
 })
+
+Content.displayName = 'Content';
 
 export default Content
