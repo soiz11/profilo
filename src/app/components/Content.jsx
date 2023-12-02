@@ -35,8 +35,8 @@ const Content =  forwardRef((props, contentsRef) => {
 
   return (
     <>
-       <div className="w-[80vw]">
-        <div className="flex my-10 w-[100%] items-center mb-10 mt-5">
+       <div className="w-[100%]">
+        <div className="flex my-10 w-[100%] items-center mb-10 mt-12">
             <div ref={contentsRef} className="text-[22px] flex font-[600] mr-5">Content Creation</div>
             <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
         </div>
@@ -57,7 +57,7 @@ const Content =  forwardRef((props, contentsRef) => {
                 <div className='flex mt-2 p-[16px]'>
                     <div className='flex flex-col px-[10px] w-[100%]'>
                         {/* <div className='font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px]'>{creation.name}</div> */}
-                        <div className='text-[10px] pb-3 xs:text-[12px] md:text-[14px] xl:text-[16px] text-[#5a5f61] flex pt-[30px]'>{creation.description}</div>
+                        <div className='text-[8px] xxs:text-[10px] pb-3 xs:text-[12px] md:text-[14px] xl:text-[16px] text-[#5a5f61] flex pt-[30px]'>{creation.description}</div>
                     </div>
                 </div>
             </div> 

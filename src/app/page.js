@@ -41,7 +41,7 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <div className='flex flex-col justify-center w-[100vw] items-center'>
+        <div className='flex flex-col justify-center w-[100%] items-center'>
           <div className='flex flex-col items-center'>
             <Navigation
               scrollToSection={scrollToSection}
@@ -51,10 +51,12 @@ export default function Home() {
               contentsRef={contents}
             />
             <Hero ref={about} />
+            <div className='w-[80vw]'>
             <Skills ref={skills} />
             <Projects ref={projects} />
             <Content ref={contents} />
             <Foooter />
+            </div>
           </div>
         </div>
       )}

@@ -31,7 +31,7 @@ const Navigation = forwardRef(({ scrollToSection, aboutRef, skillsRef, projectsR
         </div>
         <div className='flex px-1'>
             {sections.map((section,index)=>(
-                <div onClick={()=>scrollToSection(section.url)} className='flex mx-2 font-[500] my-4 text-[7px] sm:text-[10px] md:text-[14px] xl:text-[16px] md:mx-4 md:hover:border-b-[3px] md:hover:border-[black] border-b-[3px] border-transparent pt-1 duration-700 cursor-pointer' key={index}>{section.name}</div> 
+                <div onClick={()=>scrollToSection(section.url)} className='flex mx-2 font-[500] my-4 text-[6px] xs:text-[7px] sm:text-[10px] md:text-[14px] xl:text-[16px] md:mx-4 md:hover:border-b-[3px] md:hover:border-[black] border-b-[3px] border-transparent pt-1 duration-700 cursor-pointer' key={index}>{section.name}</div> 
             ))}
          </div>
     </div>

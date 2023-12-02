@@ -13,6 +13,6 @@ body {
 
 @layer utilities {
   .box-custom {
-    @apply  w-[100%] h-[60px] text-[14px] xs:text-[20px] text-[black] font-[600] flex items-center ; 
+    @apply  w-[100%] h-[60px] text-[14px] xxs:text-[16px] xs:text-[20px] text-[black] font-[600] flex items-center ; 
   }
 } 

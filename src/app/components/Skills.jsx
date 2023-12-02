@@ -67,7 +67,7 @@ const Skills = forwardRef((props,skillsRef) => {
       ]
   return (
        <>
-       <div className="w-[80vw]">
+       <div className="w-[100%]">
         <div className="flex my-10 w-[100%] items-center mb-10 mt-14">
             <div ref={skillsRef} className="text-[22px] flex font-[600] mr-5">Skills</div>
             <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
