@@ -11,7 +11,7 @@ import figmaim from "../../../public/figma.webp"
 import psim from "../../../public/ps.webp"
 import flutterweb from "../../../public/flutter.webp"
 
-const Skills = forwardRef((props, skillsRef) => {
+const Skills = forwardRef((props,skillsRef) => {
     const mixers = [
         {
           "name": "ReactJS",
