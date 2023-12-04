@@ -15,7 +15,7 @@ const Hero = forwardRef((props, aboutRef) => {
           <Social/>
         </div>
         <div className='md:flex w-[40%] py-[1%] hidden '>
-            <Image alt="" src={myimg} className='w-[100%] h-[100%] object-contain'/>
+            <Image alt="" loading='lazy' src={myimg} className='w-[100%] h-[100%] object-contain'/>
         </div>
          
     </div>

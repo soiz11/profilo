@@ -11,6 +11,7 @@ import Foooter from './components/Foooter';
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
+
   const about = useRef(null);
   const skills = useRef(null);
   const projects = useRef(null);
@@ -27,21 +28,25 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // Simulate a 3-second delay for loading
-    const timeout = setTimeout(() => {
+    const hideLoader = () => {
       setLoading(false);
-    }, 3000);
+    };
 
-    // Clear the timeout on component unmount (cleanup)
-    return () => clearTimeout(timeout);
+    window.addEventListener('load', hideLoader);
+
+    return () => {
+      window.removeEventListener('load', hideLoader);
+    };
   }, []);
+
+
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div className='flex flex-col justify-center w-[100%] items-center'>
+        
+        <Loader className={`loader ${loading ? '' : 'hidden'}`} />
+      
+        <div className={`content ${loading ? 'hidden' : 'flex flex-col justify-center w-[100%] items-center top-0'}`}>
           <div className='flex flex-col items-center'>
             <Navigation
               scrollToSection={scrollToSection}
@@ -59,7 +64,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      )}
+        
+      
+      
     </>
   );
 }

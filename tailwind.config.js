@@ -60,12 +60,31 @@ module.exports = {
           '100%':{
             width:'100%',
           },
-        }
+        },
+
+        'letterspace': {
+          '0%': {
+            letterSpacing: 'normal',
+          },
+          '35%': {
+            letterSpacing: '1px',
+          },
+          '50%': {
+            letterSpacing: 'normal',
+          },
+          '85%': {
+            letterSpacing: '1px',
+          },
+          '100%': {
+            letterSpacing: 'normal',
+          },
+        },
       },
 
       animation:{
         'switching': 'switching 6s ease-out infinite alternate',
-        'loading':'loading 3s cubic-bezier(0.4, 0, 0.2, 1) forwards'
+        'loading':'loading 3s cubic-bezier(0.4, 0, 0.2, 1) backwards',
+        'letterspace': 'letterspace 3s ease-in-out infinite',
 
       }
       

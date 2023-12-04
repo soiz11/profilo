@@ -80,7 +80,7 @@ const Skills = forwardRef((props,skillsRef) => {
           <div key={index} className="flex flex-row mb-5">
 
             <div className="flex xxs:w-[80px] w-[60px] xxs:h-[60px] h-[40px] rounded-lg bg-[#ededed] shadow-md border-2 border-[white] mr-3">
-              <Image src={mixer.url} alt={mixer.name} className="w-[100%] object-contain" />
+              <Image src={mixer.url} loading='lazy' alt={mixer.name} className="w-[100%] object-contain" />
             </div>
 
             <div className="flex flex-col justify-center w-[100%]">
