@@ -53,7 +53,7 @@ export default function Home() {
     // Simulating a delay for testing purposes
     const timeoutId = setTimeout(() => {
       hideLoader();
-    }, 100);
+    }, 4000);
 
     // Cleanup function to clear the timeout
     return () => {

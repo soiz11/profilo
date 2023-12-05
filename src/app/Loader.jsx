@@ -11,7 +11,7 @@ const Loader = () => {
     // Simulate a 3-second delay for loading
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 4000);
 
     // Clear the timeout on component unmount (cleanup)
     return () => clearTimeout(timeout);
