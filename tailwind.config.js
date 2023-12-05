@@ -83,7 +83,7 @@ module.exports = {
 
       animation:{
         'switching': 'switching 6s ease-out infinite alternate',
-        'loading':'loading 3s cubic-bezier(0.4, 0, 0.2, 1) backwards',
+        'loading':'loading 3s cubic-bezier(0.4, 0, 0.2, 1) forwards',
         'letterspace': 'letterspace 3s ease-in-out infinite',
 
       }

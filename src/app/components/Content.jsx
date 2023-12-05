@@ -52,7 +52,7 @@ const Content =  forwardRef((props, contentsRef) => {
                     </div>
                     <div  className='xxs:mt-0 mt-[50px] font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px] flex items-end pl-2'>{creation.name}</div>
                 </div>
-                <video src={creation.vlink}  width="100%" height="100%" loop muted autoPlay className='object-cover brightness-55 p-2 group-hover:shadow-lg'/>
+                <video src={creation.vlink}  width="100%" loading='lazy' height="100%" loop  muted autoPlay className='object-cover brightness-55 p-2 group-hover:shadow-lg'/>
             </div>
                 <div className='flex mt-2 p-[16px]'>
                     <div className='flex flex-col px-[10px] w-[100%]'>

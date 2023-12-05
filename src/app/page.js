@@ -27,26 +27,49 @@ export default function Home() {
     }
   };
 
+  // console.log(loading);
+
+  // useEffect(() => {
+  //   const hideLoader = () => {
+  //     setLoading(false);
+      
+  //   };
+  
+  //   window.addEventListener('DOMContentLoaded', hideLoader);
+  
+  //   return () => {
+  //     window.removeEventListener('DOMContentLoaded', hideLoader);
+  //   };
+  // }, []);
+
+  // console.log(loading);
+
+
   useEffect(() => {
     const hideLoader = () => {
       setLoading(false);
     };
 
-    window.addEventListener('load', hideLoader);
+    // Simulating a delay for testing purposes
+    const timeoutId = setTimeout(() => {
+      hideLoader();
+    }, 100);
 
+    // Cleanup function to clear the timeout
     return () => {
-      window.removeEventListener('load', hideLoader);
+      clearTimeout(timeoutId);
     };
   }, []);
 
-
-
+  console.log(loading);
   return (
     <>
         
-        <Loader className={`loader ${loading ? '' : 'hidden'}`} />
-      
-        <div className={`content ${loading ? 'hidden' : 'flex flex-col justify-center w-[100%] items-center top-0'}`}>
+        <Loader />
+        {/* <Loader className={`loader ${loading ? '' : 'hidden'}`} /> */}
+{/*       
+        <div className= 'flex flex-col justify-center w-[100%] items-center top-0'> */}
+         <div className={loading ? 'hidden' : 'flex flex-col justify-center w-[100%] items-center top-0'}> 
           <div className='flex flex-col items-center'>
             <Navigation
               scrollToSection={scrollToSection}
