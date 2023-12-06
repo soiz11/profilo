@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <>
         
-        <Loader />
+        <Loader/>
         {/* <Loader className={`loader ${loading ? '' : 'hidden'}`} /> */}
 {/*       
         <div className= 'flex flex-col justify-center w-[100%] items-center top-0'> */}
