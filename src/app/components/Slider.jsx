@@ -6,7 +6,7 @@ const Slider = () => {
             <div className="flex flex-col w-[100%] h-[180px] animate-switching ml-1">
                 <div className="box-custom">Web Developer</div>
                 <div className="box-custom">Mobile App Developer</div>
-                <div className="box-custom">Slider Creator</div>
+                <div className="box-custom">Content Creator</div>
                 
             </div>
     </div>
