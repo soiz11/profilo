@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
 import React, { forwardRef } from "react";
-import tblogo from "@/../public/projects/tblogo.png";
-import ute from "@/../public/projects/ute.png";
-import stationary from "@/../public/projects/stationary.png";
-import pikdy from "@/../public/projects/pikdy.png";
+import tblogo from "@/public/projects/tblogo.png";
+import ute from "@/public/projects/ute.png";
+import stationary from "@/public/projects/stationary.png";
+import pikdy from "@/public/projects/pikdy.png";
 
-import pik from "../../../public/pik.webp";
-import Bar from "./Bar";
+import Bar from "@/components/Standalone/Bar";
 import Link from "next/link";
 import { FaCircleArrowRight } from "react-icons/fa6";
 

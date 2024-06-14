@@ -1,13 +1,14 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import Loader from "./Loader"; // Replace 'Loader' with the actual loader component
-import Navigation from "./components/Navigation";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Content from "./components/Content";
-import Foooter from "./components/Foooter";
-import Experience from "./components/Experience";
+import Navigation from "@/components/Sections/Navigation";
+import Hero from "@/components/Sections/Hero";
+import Skills from "@/components/Sections/Skills";
+import Projects from "@/components/Sections/Projects";
+import Content from "@/components/Sections/Content";
+import Foooter from "@/components/Sections/Foooter";
+import Experience from "@/components/Sections/Experience";
+import NewHero from "@/components/Sections/NewHero";
+import Loader from "@/components/Sections/Loader";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -87,7 +88,11 @@ export default function Home() {
         </div>
 
         <div className="xs:w-[80vw] w-[85vw]">
-          <Hero ref={about} />
+          <div className="mt-[220px] sm:mt-[300px] midwidth:mt-[200px] lg:mt-[250px]">
+            <NewHero />
+          </div>
+
+          {/* <Hero ref={about} /> */}
           <Experience ref={experience} />
           <Skills ref={skills} />
           <Projects ref={projects} />

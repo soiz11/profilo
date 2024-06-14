@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { forwardRef } from "react";
-import bw from "../../../public/bloggerworld.webp";
-import angle from "../../../public/logo1.webp";
-import fox from "../../../public/logo2.webp";
+import angle from "@/public/logo1.webp";
+import fox from "@/public/logo2.webp";
 
 //import vid from "../../../public/vid.mp4"
 

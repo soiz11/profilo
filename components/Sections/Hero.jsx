@@ -1,10 +1,9 @@
 import React, { forwardRef } from "react";
 import Image from "next/image";
-import myimg from "../../../public/web_img.webp";
-import myimg2 from "../../../public/vercel.svg";
-import Slider from "./Slider";
-import Namecard from "./Namecard";
-import Social from "./Social";
+import myimg from "@/public/web_img.webp";
+import Slider from "@/components/Standalone/Slider";
+import Namecard from "@/components/Standalone/Namecard";
+import Social from "@/components/Standalone/Social";
 
 const Hero = forwardRef((props, aboutRef) => {
   return (

@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
-import ncloud from "@/../public/companies/ncloud.png";
-import itum from "@/../public/companies/itum.png";
+import ncloud from "@/public/companies/ncloud.png";
+import itum from "@/public/companies/itum.png";
 import Image from "next/image";
 import Link from "next/link";
 

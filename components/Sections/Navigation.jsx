@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import Image from "next/image";
-import logo from "../../../public/sohan.webp";
+import logo from "@/public/sohan.webp";
 
 const Navigation = forwardRef(
   ({
