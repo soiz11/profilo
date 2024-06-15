@@ -32,6 +32,13 @@ const HomePageComp = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   // console.log(loading);
 
   // useEffect(() => {
@@ -83,6 +90,7 @@ const HomePageComp = () => {
           <Navigation
             scrollToSection={scrollToSection}
             aboutRef={about}
+            scrollToTop={scrollToTop}
             skillsRef={skills}
             projectsRef={projects}
             contentsRef={contents}
@@ -92,7 +100,7 @@ const HomePageComp = () => {
 
         <div className="xs:w-[80vw] w-[85vw]">
           <div className="mt-[220px] sm:mt-[300px] midwidth:mt-[200px] lg:mt-[250px] 2xl:mt-[280px]">
-            <NewHero />
+            <NewHero ref={about} />
           </div>
 
           {/* <Hero ref={about} /> */}

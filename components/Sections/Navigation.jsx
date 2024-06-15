@@ -7,6 +7,7 @@ import { BiSolidDownArrow } from "react-icons/bi";
 const Navigation = forwardRef(
   ({
     scrollToSection,
+    scrollToTop,
     aboutRef,
     skillsRef,
     projectsRef,
@@ -38,9 +39,22 @@ const Navigation = forwardRef(
       },
     ];
 
+    const pcHandleClick = (url) => {
+      if (url != aboutRef) {
+        return scrollToSection(url);
+      }
+
+      return scrollToTop();
+    };
+
     const mobileOnClickHandle = (url) => {
-      scrollToSection(url);
-      setMobileNavActive(!mobileNavActive);
+      if (url != aboutRef) {
+        scrollToSection(url);
+        setMobileNavActive(!mobileNavActive);
+      } else {
+        scrollToTop();
+        setMobileNavActive(!mobileNavActive);
+      }
     };
 
     return (
@@ -65,7 +79,7 @@ const Navigation = forwardRef(
           <div className="midwidth:flex hidden px-1 ">
             {sections.map((section, index) => (
               <div
-                onClick={() => scrollToSection(section.url)}
+                onClick={() => pcHandleClick(section.url)}
                 className="flex mx-2 font-[500] my-4  text-[6px] xs:text-[7px] sm:text-[10px] md:text-[14px] xl:text-[16px] md:mx-4 md:hover:border-b-[3px] md:hover:border-[black] border-b-[3px] border-transparent pt-1 duration-700 cursor-pointer"
                 key={index}
               >
