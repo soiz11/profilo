@@ -8,9 +8,13 @@ import Foooter from "@/components/Sections/Foooter";
 import Experience from "@/components/Sections/Experience";
 import NewHero from "@/components/Sections/NewHero";
 import Loader from "@/components/Sections/Loader";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const HomePageComp = () => {
   const [loading, setLoading] = useState(true);
+  const [windowWidth, windowHeight] = useWindowSize();
+
+  const size = windowWidth >= 940 ? 100 : 70;
 
   const about = useRef(null);
   const skills = useRef(null);
@@ -20,7 +24,7 @@ const HomePageComp = () => {
 
   const scrollToSection = (elementRef) => {
     if (elementRef && elementRef.current) {
-      const targetOffset = elementRef.current.offsetTop - 100;
+      const targetOffset = elementRef.current.offsetTop - size;
       window.scrollTo({
         top: targetOffset,
         behavior: "smooth",

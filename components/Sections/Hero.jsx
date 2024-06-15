@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import Image from "next/image";
-import myimg from "@/public/web_img.webp";
+import myimg from "@/public/branding/web_img.webp";
 import Slider from "@/components/Standalone/Slider";
 import Namecard from "@/components/Standalone/Namecard";
 import Social from "@/components/Standalone/Social";

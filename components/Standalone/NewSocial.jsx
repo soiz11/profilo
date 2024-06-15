@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import wpp from "@/public/whatsapp.webp";
-import mail from "@/public/mail.webp";
-import linked from "@/public/linkedin.webp";
-import git from "@/public/github.webp";
-import ytube from "@/public/youtube.webp";
+import wpp from "@/public/socialMedia/whatsapp.webp";
+import mail from "@/public/socialMedia/mail.webp";
+import linked from "@/public/socialMedia/linkedin.webp";
+import git from "@/public/socialMedia/github.webp";
+import ytube from "@/public/socialMedia/youtube.webp";
 
 const medias = [
   {

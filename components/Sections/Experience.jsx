@@ -25,7 +25,10 @@ const Experience = forwardRef((props, experienceRef) => {
     <>
       <div className="w-[100%]">
         <div className="flex my-10 w-[100%] items-center sm:mb-10 mb-5 mt-12 ">
-          <div ref={experienceRef} className="text-[22px] flex font-[600] mr-5">
+          <div
+            ref={experienceRef}
+            className="xs:text-[22px] text-[20px] flex font-[600] mr-5"
+          >
             Experience
           </div>
           <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
@@ -47,7 +50,7 @@ const Experience = forwardRef((props, experienceRef) => {
               <Image
                 src={experience.companyLogo}
                 alt="logo of the company"
-                className="size-[100%] object-contain p-2"
+                className="size-[100%] object-contain xs:p-2 p-[6px]"
               />
             </Link>
             <div className="flex flex-col flex-1">

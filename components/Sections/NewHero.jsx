@@ -1,5 +1,7 @@
 import React from "react";
-import myimg from "@/public/web_img.webp";
+import myimg from "@/public/branding/web_img.webp";
+import myimg2 from "@/public/branding/web_img2.png";
+import myimg3 from "@/public/branding/web_img3.png";
 import Image from "next/image";
 import NewNamecard from "../Standalone/NewNameCard";
 import Slider from "../Standalone/Slider";
@@ -16,7 +18,7 @@ const NewHero = () => {
         </div>
         <div className="relative  w-fit">
           <Image
-            src={myimg}
+            src={myimg3}
             alt=""
             className="absolute xl:h-[500px] lg:h-[450px] sm:h-[400px] h-[300px] w-fit -bottom-[0px] bxs:bottom-[30px] sm:bottom-[30px] midwidth:-bottom-[100px] 2xl:-bottom-[60px] -translate-x-1/2 left-1/2 z-20"
           />

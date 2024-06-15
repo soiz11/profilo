@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { forwardRef } from "react";
-import angle from "@/public/logo1.webp";
-import fox from "@/public/logo2.webp";
+import angle from "@/public/socialMedia/logo1.webp";
+import fox from "@/public/socialMedia/logo2.webp";
 
 //import vid from "../../../public/vid.mp4"
 
@@ -17,7 +17,7 @@ const Content = forwardRef((props, contentsRef) => {
       url: "https://www.youtube.com/@angletheeta",
       description:
         "Discover the world of mathematics with Angle Theeta! Our channel is your guide to mastering advanced mathematics, whether you're studying for Ordinary or Advanced Levels. We specialize in practical math, covering 95% of applied mathematics concepts and completing lessons on pure mathematics, like integration. Our content is tailored for students at various levels, and we offer supportive playlists for different learning approaches. Stay tuned as we explore probability and statistics soon! Angle Theeta is more than just lessons; it's a community making math accessible and enjoyable. Subscribe now for a straightforward and engaging approach to advanced mathematics!",
-      vlink: "/angle.mp4",
+      vlink: "/socialMedia/angle.mp4",
       imgurl: angle,
     },
     {
@@ -25,7 +25,7 @@ const Content = forwardRef((props, contentsRef) => {
       url: "https://www.youtube.com/@FoxMake",
       description:
         "Welcome to Fox Make, your guide to understanding IT without the jargon! Designed for those new to IT, our channel helps you navigate tech essentials in your daily life. We start with the basics and gradually explore more technical topics, making IT easy to grasp. Fox Make is committed to simplifying complex concepts, making them accessible to everyone. As we grow, expect deeper technical insights that enrich your IT knowledge. Subscribe now to Fox Make, where we bridge the gap between everyday users and the world of information technology, making it simple and engaging!",
-      vlink: "/fox.mp4",
+      vlink: "/socialMedia/fox.mp4",
       imgurl: fox,
     },
   ];
@@ -34,7 +34,10 @@ const Content = forwardRef((props, contentsRef) => {
     <>
       <div className="w-[100%]">
         <div className="flex my-10 w-[100%] items-center sm:mb-10 mb-5  midwidth:mt-14 mt-9">
-          <div ref={contentsRef} className="text-[22px] flex font-[600] mr-5">
+          <div
+            ref={contentsRef}
+            className="xs:text-[22px] text-[20px] flex font-[600] mr-5"
+          >
             Content Creation
           </div>
           <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
@@ -44,7 +47,7 @@ const Content = forwardRef((props, contentsRef) => {
           {creations.map((creation, index) => (
             <div
               key={index}
-              className="flex flex-col   bg-[#ededed] border-4 shadow-lg rounded-lg border-[white] w-full overflow-hidden pb-2 mb-9 "
+              className="flex flex-col   bg-[#ededed] border-4 shadow-lg rounded-lg border-[white] w-full overflow-hidden pb-2 bigmd:mb-9 mb-5 "
             >
               <div className=" h-[200px] xs:h-[250px]  w-[100%] relative rounded flex md:h-[300px] xl:h-[350px]">
                 <div

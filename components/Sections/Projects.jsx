@@ -40,7 +40,7 @@ const Projects = forwardRef((props, projectsRef) => {
       projectType: "University Project (ITUM)",
       frameworks: "React.js , Firebase",
       contribution: 60,
-      url: "https://github.com/soiz11/StationaryMS.git",
+      url: "https://github.com/soiz11/StationaryMS",
     },
     {
       projectLogo: pikdy,
@@ -48,7 +48,7 @@ const Projects = forwardRef((props, projectsRef) => {
       projectType: "University Project (ITUM)",
       frameworks: "Flutter , Firebase , Python",
       contribution: 40,
-      url: "https://github.com/soiz11/smart-fiton.git",
+      url: "https://github.com/soiz11/smart-fiton",
     },
   ];
 
@@ -56,7 +56,10 @@ const Projects = forwardRef((props, projectsRef) => {
     <>
       <div className="w-[100%]">
         <div className="flex my-10 w-[100%] items-center sm:mb-10 mb-5 midwidth:mt-12 mt-9">
-          <div ref={projectsRef} className="text-[22px] flex font-[600] mr-5">
+          <div
+            ref={projectsRef}
+            className="xs:text-[22px] text-[20px] flex font-[600] mr-5"
+          >
             Projects
           </div>
           <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
@@ -70,6 +73,7 @@ const Projects = forwardRef((props, projectsRef) => {
             className="flex xl:flex-row bigmd:flex-col flex-row bg-[#ededed] border-2 shadow-lg rounded-lg border-[white]  overflow-hidden 3xl:p-5 2xl:px-10 bigmd:px-5 bigsm:px-10  px-5 py-5 3xl:gap-x-5 2xl:gap-x-10 bigmd:gap-x-5 bigsm:gap-x-10 gap-x-5 items-center relative"
           >
             <Link
+              target="_blank"
               href={myproject.url}
               className="absolute 3xl:right-5 xxs:right-7 right-5 3xl:top-5 xs:top-7 xxs:top-12 top-11  z-10"
             >
