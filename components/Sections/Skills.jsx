@@ -67,30 +67,28 @@ const Skills = forwardRef((props, skillsRef) => {
   ];
   return (
     <>
-      <div className="w-[100%]">
-        <div className="flex  w-[100%] items-center sm:mb-10 mb-5  mt-12">
-          <div ref={skillsRef} className="text-[22px] flex font-[600] mr-5">
-            Skills
-          </div>
-          <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
+      <div className="flex w-[100%] items-center sm:mb-10 mb-5 midwidth:mt-12 mt-9">
+        <div ref={skillsRef} className="text-[22px] flex font-[600] mr-5">
+          Skills
         </div>
+        <div className="flex flex-1 bg-[#939393] h-[3px]"></div>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:place-Skills-between xs:gap-5 gap-x-10 md:gap-x-14 sm:gap-x-12 ">
-          {mixers.map((mixer, index) => (
-            <div key={index} className="flex flex-row mb-5">
-              <div className="flex xxs:w-[80px] w-[60px] xxs:h-[60px] h-[40px] rounded-lg bg-[#ededed] shadow-md border-2 border-[white] mr-3">
-                <Image
-                  src={mixer.url}
-                  loading="lazy"
-                  alt={mixer.name}
-                  className="w-[100%] object-contain"
-                />
-              </div>
-
-              <Bar widthAmount={mixer.amount} title={mixer.name} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:place-Skills-between xs:gap-5 gap-x-10 md:gap-x-14 sm:gap-x-12 ">
+        {mixers.map((mixer, index) => (
+          <div key={index} className="flex flex-row mb-5">
+            <div className="flex xxs:w-[80px] w-[60px] xxs:h-[60px] h-[40px] rounded-lg bg-[#ededed] shadow-md border-2 border-[white] mr-3">
+              <Image
+                src={mixer.url}
+                loading="lazy"
+                alt={mixer.name}
+                className="w-[100%] object-contain"
+              />
             </div>
-          ))}
-        </div>
+
+            <Bar widthAmount={mixer.amount} title={mixer.name} />
+          </div>
+        ))}
       </div>
     </>
   );

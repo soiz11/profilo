@@ -33,7 +33,7 @@ const Content = forwardRef((props, contentsRef) => {
   return (
     <>
       <div className="w-[100%]">
-        <div className="flex my-10 w-[100%] items-center sm:mb-10 mb-5  mt-14">
+        <div className="flex my-10 w-[100%] items-center sm:mb-10 mb-5  midwidth:mt-14 mt-9">
           <div ref={contentsRef} className="text-[22px] flex font-[600] mr-5">
             Content Creation
           </div>

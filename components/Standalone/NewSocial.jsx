@@ -32,7 +32,7 @@ const medias = [
 
 const NewSocial = () => {
   return (
-    <div className="flex justify-between w-[350px] mt-5 xxs:mt-3 sm:mt-5 md:mt-7">
+    <div className="flex justify-between xs:w-[350px] w-full mt-0 xs:mt-3 sm:mt-5 md:mt-7">
       {medias.map((media, index) => (
         <Link
           href={media.url}

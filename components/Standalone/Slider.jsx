@@ -5,7 +5,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 const Slider = () => {
   return (
-    <div className=" w-[350px] h-[60px] overflow-hidden shadow bg-[#ededed] border-[1px] border-[white] flex rounded ">
+    <div className=" xs:w-[350px] w-full h-[60px] overflow-hidden shadow bg-[#ededed] border-[1px] border-[white] flex rounded ">
       <div className="flex flex-col w-[100%] h-[180px] animate-switching mx-5">
         <div className="flex justify-between items-center">
           <div className="box-custom">Web Developer</div>

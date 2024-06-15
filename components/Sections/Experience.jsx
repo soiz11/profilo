@@ -24,7 +24,7 @@ const Experience = forwardRef((props, experienceRef) => {
   return (
     <>
       <div className="w-[100%]">
-        <div className="flex my-10 w-[100%] items-center sm:mb-10 mb-5 mt-12">
+        <div className="flex my-10 w-[100%] items-center sm:mb-10 mb-5 mt-12 ">
           <div ref={experienceRef} className="text-[22px] flex font-[600] mr-5">
             Experience
           </div>
@@ -32,7 +32,7 @@ const Experience = forwardRef((props, experienceRef) => {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative ">
         <div className="absolute  bigmd:w-[5px] w-[4px] bg-black top-7 bottom-7 bigmd:translate-x-12 xs:translate-x-[38px] xxs:translate-x-8 translate-x-7 z-10" />
         {experiences.map((experience, index) => (
           <div
