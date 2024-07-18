@@ -3,6 +3,7 @@ import Image from "next/image";
 import reactim from "@/public/skills/react.webp";
 import nextim from "@/public/skills/next.webp";
 import tailwindim from "@/public/skills/tailwind.webp";
+import reduxim from "@/public/skills/redux.webp";
 import nodeim from "@/public/skills/node.webp";
 import postmanim from "@/public/skills/postman.webp";
 import firebaseim from "@/public/skills/firebase.webp";
@@ -28,6 +29,11 @@ const Skills = forwardRef((props, skillsRef) => {
       name: "Tailwind CSS",
       url: tailwindim,
       amount: 80,
+    },
+    {
+      name: "Redux",
+      url: reduxim,
+      amount: 40,
     },
     {
       name: "Flutter",
