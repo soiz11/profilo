@@ -90,10 +90,9 @@ const Navigation = forwardRef(
         </div>
 
         {/**mobile version**/}
-
         <div
           className={` ${
-            mobileNavActive ? "opacity-100" : "opacity-0"
+            mobileNavActive ? "opacity-100" : "opacity-0 hidden"
           } transition-all duration-700 flex flex-col fixed top-[80px] xs:right-[10%] right-[8%]  items-center bg-[#93939311] backdrop-blur-xl rounded-md z-50 border-2 border-[white] shadow-md`}
         >
           {sections.map((section, index) => (
