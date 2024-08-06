@@ -72,7 +72,7 @@ const HomePageComp = () => {
     };
   }, []);
 
-  console.log(loading);
+  // console.log(loading);
   return (
     <>
       <Loader />

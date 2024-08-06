@@ -8,6 +8,7 @@ import nodeim from "@/public/skills/node.webp";
 import postmanim from "@/public/skills/postman.webp";
 import firebaseim from "@/public/skills/firebase.webp";
 import mongoim from "@/public/skills/mongodb.webp";
+import dockerim from "@/public/skills/docker.webp";
 import figmaim from "@/public/skills/figma.webp";
 import psim from "@/public/skills/ps.webp";
 import flutterweb from "@/public/skills/flutter.webp";
@@ -59,6 +60,11 @@ const Skills = forwardRef((props, skillsRef) => {
       name: "MongoDB",
       url: mongoim,
       amount: 45,
+    },
+    {
+      name: "Docker",
+      url: dockerim,
+      amount: 50,
     },
     {
       name: "Figma",
