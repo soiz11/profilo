@@ -5,6 +5,7 @@ import tblogo from "@/public/projects/tblogo.png";
 import ute from "@/public/projects/ute.png";
 import stationary from "@/public/projects/stationary.png";
 import pikdy from "@/public/projects/pikdy.png";
+import ncloud from "@/public/projects/ncloud.png";
 
 import Bar from "@/components/Standalone/Bar";
 import Link from "next/link";
@@ -18,6 +19,14 @@ const Projects = forwardRef((props, projectsRef) => {
   };
 
   const myprojects = [
+    {
+      projectLogo: ncloud,
+      projectName: "eCom CMS with Next.js",
+      projectType: "Professional Project (ncloud solutions)",
+      frameworks: "Next.js , MongoDB , Auth.js , Hook-Form",
+      contribution: 99,
+      url: "ongoing",
+    },
     {
       projectLogo: tblogo,
       projectName: "Tour Booking Sri Lanka",
@@ -72,13 +81,19 @@ const Projects = forwardRef((props, projectsRef) => {
             key={index}
             className="flex xl:flex-row bigmd:flex-col flex-row bg-[#ededed] border-2 shadow-lg rounded-lg border-[white]  overflow-hidden 3xl:p-5 2xl:px-10 bigmd:px-5 bigsm:px-10  px-5 py-5 3xl:gap-x-5 2xl:gap-x-10 bigmd:gap-x-5 bigsm:gap-x-10 gap-x-5 items-center relative"
           >
-            <Link
-              target="_blank"
-              href={myproject.url}
-              className="absolute 3xl:right-5 xxs:right-7 right-5 3xl:top-5 xs:top-7 xxs:top-12 top-11  z-10"
-            >
-              <FaCircleArrowRight size={22} />
-            </Link>
+            {myproject.url == "ongoing" ? (
+              <div className="text-[14px] text-white bg-black rounded-md px-2 py-[2px] absolute 3xl:right-5 xxs:right-7 right-5 3xl:top-5 xs:top-7 xxs:top-12 top-11 z-10">
+                ongoing
+              </div>
+            ) : (
+              <Link
+                target="_blank"
+                href={myproject.url}
+                className="absolute 3xl:right-5 xxs:right-7 right-5 3xl:top-5 xs:top-7 xxs:top-12 top-11  z-10"
+              >
+                <FaCircleArrowRight size={22} />
+              </Link>
+            )}
 
             <div className="absolute  right-3 top-3 xxs:size-[50px] size-[40px]  xs:hidden  rounded-full xs:border-[3px] border-[1px] border-white flex justify-center items-center xxs:p-1 p-[2px] shadow-md">
               <Image
