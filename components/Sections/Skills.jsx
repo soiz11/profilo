@@ -19,12 +19,12 @@ const Skills = forwardRef((props, skillsRef) => {
     {
       name: "ReactJS",
       url: reactim,
-      amount: 85,
+      amount: 80,
     },
     {
       name: "NextJs",
       url: nextim,
-      amount: 80,
+      amount: 85,
     },
     {
       name: "Tailwind CSS",
@@ -34,17 +34,17 @@ const Skills = forwardRef((props, skillsRef) => {
     {
       name: "Redux",
       url: reduxim,
-      amount: 40,
+      amount: 70,
     },
     {
       name: "Flutter",
       url: flutterweb,
-      amount: 60,
+      amount: 40,
     },
     {
       name: "NodeJs",
       url: nodeim,
-      amount: 50,
+      amount: 70,
     },
     {
       name: "Postman",
@@ -59,12 +59,12 @@ const Skills = forwardRef((props, skillsRef) => {
     {
       name: "MongoDB",
       url: mongoim,
-      amount: 45,
+      amount: 75,
     },
     {
       name: "Docker",
       url: dockerim,
-      amount: 50,
+      amount: 60,
     },
     {
       name: "Figma",
