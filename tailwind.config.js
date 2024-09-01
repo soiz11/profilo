@@ -90,12 +90,23 @@ module.exports = {
             letterSpacing: "normal",
           },
         },
+
+        docslider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-50% - 20px))" },
+        },
       },
 
       animation: {
+        docslider: "docslider 9s linear infinite",
         switching: "switching 6s ease-out infinite alternate",
         loading: "loading 4s cubic-bezier(0.4, 0, 0.2, 1) forwards",
         letterspace: "letterspace 3s ease-in-out infinite",
+      },
+
+      boxShadow: {
+        docslider:
+          "inset 10px 0 55px -10px rgba(0, 0, 0, 0.5), inset -10px 0 55px -10px rgba(0, 0, 0, 0.5)",
       },
     },
   },
