@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/public/branding/sohan.webp";
+import logo from "../../../public/branding/sohan.webp";
 import { useEffect, useState } from "react";
 
 const Loader = () => {

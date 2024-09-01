@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import Navigation from "@/components/Sections/Navigation";
+import Navigation, { ScrollFunction } from "@/components/Sections/Navigation";
 import Skills from "@/components/Sections/Skills";
 import Projects from "@/components/Sections/Projects";
 import Content from "@/components/Sections/Content";
@@ -22,7 +22,7 @@ const HomePageComp = () => {
   const contents = useRef(null);
   const experience = useRef(null);
 
-  const scrollToSection = (elementRef) => {
+  const scrollToSection: ScrollFunction = (elementRef) => {
     if (elementRef && elementRef.current) {
       const targetOffset = elementRef.current.offsetTop - size;
       window.scrollTo({
@@ -100,7 +100,8 @@ const HomePageComp = () => {
 
         <div className="xs:w-[80vw] w-[85vw]">
           <div className="mt-[220px] sm:mt-[300px] midwidth:mt-[200px] lg:mt-[250px] 2xl:mt-[280px]">
-            <NewHero ref={about} />
+            <NewHero />
+            {/* <NewHero ref={about} /> */}
           </div>
 
           {/* <Hero ref={about} /> */}

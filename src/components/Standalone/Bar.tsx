@@ -1,6 +1,12 @@
 import React from "react";
 
-const Bar = ({ widthAmount, title = false }) => {
+const Bar = ({
+  widthAmount,
+  title = "",
+}: {
+  widthAmount: Number;
+  title?: string;
+}) => {
   return (
     <div className="flex flex-col justify-center w-[100%]">
       {title && (

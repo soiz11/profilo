@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import React, { forwardRef } from "react";
-import tblogo from "@/public/projects/tblogo.png";
-import ute from "@/public/projects/ute.png";
-import stationary from "@/public/projects/stationary.png";
-import pikdy from "@/public/projects/pikdy.png";
-import ncloud from "@/public/projects/ncloud.png";
+import React, { ForwardedRef, forwardRef } from "react";
+import tblogo from "../../../public/projects/tblogo.png";
+import ute from "../../../public/projects/ute.png";
+import stationary from "../../../public/projects/stationary.png";
+import pikdy from "../../../public/projects/pikdy.png";
+import ncloud from "../../../public/projects/ncloud.png";
 
 import Bar from "@/components/Standalone/Bar";
 import Link from "next/link";
@@ -13,8 +13,17 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 
 //import vid from "../../../public/vid.mp4"
 
-const Projects = forwardRef((props, projectsRef) => {
-  const handleButtonClick = (myproject) => {
+interface projectProps {
+  projectLogo: String;
+  projectName: string;
+  projectType: string;
+  frameworks: string;
+  contribution: number;
+  url: string;
+}
+
+const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
+  const handleButtonClick = (myproject: projectProps) => {
     window.open(myproject.url, "_blank");
   };
 

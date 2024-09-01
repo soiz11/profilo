@@ -1,8 +1,13 @@
-import React, { forwardRef, useState } from "react";
+import React, { ForwardedRef, forwardRef, RefObject, useState } from "react";
 import Image from "next/image";
-import logo from "@/public/branding/sohan.webp";
+import logo from "../../../public/branding/sohan.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiSolidDownArrow } from "react-icons/bi";
+import { url } from "inspector";
+import Link from "next/link";
+
+// aboutRef: ForwardedRef<HTMLDivElement>
+export type ScrollFunction = (ref: React.RefObject<HTMLElement>) => void;
 
 const Navigation = forwardRef(
   ({
@@ -13,6 +18,14 @@ const Navigation = forwardRef(
     projectsRef,
     contentsRef,
     experienceRef,
+  }: {
+    scrollToSection: ScrollFunction;
+    scrollToTop: () => void;
+    aboutRef: React.RefObject<HTMLElement>;
+    skillsRef: React.RefObject<HTMLElement>;
+    projectsRef: React.RefObject<HTMLElement>;
+    contentsRef: React.RefObject<HTMLElement>;
+    experienceRef: React.RefObject<HTMLElement>;
   }) => {
     const [mobileNavActive, setMobileNavActive] = useState(false);
 
@@ -39,7 +52,7 @@ const Navigation = forwardRef(
       },
     ];
 
-    const pcHandleClick = (url) => {
+    const pcHandleClick = (url: RefObject<HTMLElement>) => {
       if (url != aboutRef) {
         return scrollToSection(url);
       }
@@ -47,7 +60,7 @@ const Navigation = forwardRef(
       return scrollToTop();
     };
 
-    const mobileOnClickHandle = (url) => {
+    const mobileOnClickHandle = (url: RefObject<HTMLElement>) => {
       if (url != aboutRef) {
         scrollToSection(url);
         setMobileNavActive(!mobileNavActive);
@@ -86,6 +99,12 @@ const Navigation = forwardRef(
                 {section.name}
               </div>
             ))}
+            <Link
+              href={"/docs"}
+              className="flex mx-2 font-[500] my-4  text-[6px] xs:text-[7px] sm:text-[10px] md:text-[14px] xl:text-[16px] md:mx-4 md:hover:border-b-[3px] md:hover:border-[black] border-b-[3px] border-transparent pt-1 duration-700 cursor-pointer"
+            >
+              Docs
+            </Link>
           </div>
         </div>
 
@@ -98,12 +117,19 @@ const Navigation = forwardRef(
           {sections.map((section, index) => (
             <div
               onClick={() => mobileOnClickHandle(section.url)}
-              className="flex justify-center mx-4  font-[500] my-4 text-[14px] md:mx-4  cursor-pointer "
+              className="flex justify-center mx-4  font-[500] my-3 text-[14px] md:mx-4  cursor-pointer "
               key={index}
             >
               {section.name}
             </div>
           ))}
+
+          <Link
+            href={"/docs"}
+            className="flex justify-center mx-4  font-[500] my-3 text-[14px] md:mx-4  cursor-pointer "
+          >
+            Docs
+          </Link>
         </div>
       </>
     );

@@ -1,10 +1,10 @@
 import React, { forwardRef } from "react";
-import ncloud from "@/public/companies/ncloud.png";
-import itum from "@/public/companies/itum.png";
+import ncloud from "../../../public/companies/ncloud.png";
+import itum from "../../../public/companies/itum.png";
 import Image from "next/image";
 import Link from "next/link";
 
-const Experience = forwardRef((props, experienceRef) => {
+const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
   const experiences = [
     {
       companyLogo: ncloud,
