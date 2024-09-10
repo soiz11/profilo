@@ -93,12 +93,12 @@ module.exports = {
 
         docslider: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(calc(-50% - 20px))" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
 
       animation: {
-        docslider: "docslider 9s linear infinite",
+        docslider: "docslider 20s linear infinite",
         switching: "switching 6s ease-out infinite alternate",
         loading: "loading 4s cubic-bezier(0.4, 0, 0.2, 1) forwards",
         letterspace: "letterspace 3s ease-in-out infinite",
