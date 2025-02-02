@@ -4,6 +4,7 @@ import Link from "next/link";
 import wpp from "../../../public/socialMedia/whatsapp.webp";
 import mail from "../../../public/socialMedia/mail.webp";
 import linked from "../../../public/socialMedia/linkedin.webp";
+import medium from "../../../public/socialMedia/medium.png";
 import git from "../../../public/socialMedia/github.webp";
 import ytube from "../../../public/socialMedia/youtube.webp";
 
@@ -19,6 +20,10 @@ const medias = [
   {
     name: linked,
     url: "https://www.linkedin.com/in/sohan11/",
+  },
+  {
+    name: medium,
+    url: "https://medium.com/@soizsinghe",
   },
   {
     name: git,

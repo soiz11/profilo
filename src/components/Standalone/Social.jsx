@@ -6,6 +6,7 @@ import mail from "@/public/socialMedia/mail.webp";
 import linked from "@/public/socialMedia/linkedin.webp";
 import git from "@/public/socialMedia/github.webp";
 import ytube from "@/public/socialMedia/youtube.webp";
+import OptimizeImage from "./OptimizeImage";
 
 const medias = [
   {
@@ -40,12 +41,17 @@ const Social = () => {
           key={index}
           className="flex items-center justify-center h-[20px] w-[20px] xs:h-[25px] xs:w-[25px] sm:h-[30px] sm:w-[30px] lg:h-[40px] lg:w-[40px] rounded-full bg-[#ededed] shadow-xl border-2 border-[white]"
         >
-          <Image
+          <OptimizeImage
+            alt=""
+            src={media.name}
+            className="w-[10px] xs:w-[15px] h-[10px] sm:w-[20px] xs:h-[15px] sm:h-[20px] lg:w-[30px] lg:h-[30px]"
+          />
+          {/* <Image
             alt=""
             loading="lazy"
             src={media.name}
             className="w-[10px] xs:w-[15px] h-[10px] sm:w-[20px] xs:h-[15px] sm:h-[20px] lg:w-[30px] lg:h-[30px]"
-          />
+          /> */}
         </Link>
       ))}
     </div>

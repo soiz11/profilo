@@ -9,9 +9,18 @@ const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
     {
       companyLogo: ncloud,
       companyName: "nCloud Solutions",
-      position: "Trainee Software Engineer",
-      duration: "Feb 2024 - Present",
+      position: "Software Engineer",
+      duration: "Feb 2025 - Present",
       url: "https://ncloud.lk/",
+      extra: true,
+    },
+    {
+      companyLogo: ncloud,
+      companyName: "nCloud Solutions",
+      position: "Trainee Software Engineer",
+      duration: "Feb 2024 - Feb 2025",
+      url: "https://ncloud.lk/",
+      extra: false,
     },
     {
       companyLogo: itum,
@@ -19,6 +28,7 @@ const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
       position: "Undergraduate",
       duration: "Nov 2021 - Jan 2024",
       url: "https://itum.mrt.ac.lk/",
+      extra: false,
     },
   ];
   return (
@@ -45,7 +55,9 @@ const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
             <Link
               href={experience.url}
               target="_blank"
-              className="z-20 bg-background bigmd:size-[100px] xs:size-[80px] xxs:size-[70px] size-[60px] overflow-hidden rounded-full xxs:border-[3px] border-[2px] border-white shadow-md"
+              className={` ${
+                experience.extra ? "border-gray-800" : "border-white"
+              } z-20 bg-background bigmd:size-[100px] xs:size-[80px] xxs:size-[70px] size-[60px] overflow-hidden rounded-full xxs:border-[4px] border-[6px]  shadow-md`}
             >
               <Image
                 src={experience.companyLogo}

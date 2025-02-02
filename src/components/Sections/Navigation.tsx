@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { url } from "inspector";
 import Link from "next/link";
+import OptimizeImage from "../Standalone/OptimizeImage";
 
 // aboutRef: ForwardedRef<HTMLDivElement>
 export type ScrollFunction = (ref: React.RefObject<HTMLElement>) => void;
@@ -73,10 +74,15 @@ const Navigation = forwardRef(
     return (
       <>
         <div className="flex first-letter bg-[#93939311] xs:w-[80vw] w-[85vw] backdrop-blur-xl rounded-md shadow-md fixed z-50 mt-2 xl:mb-4 border-2 border-[white] justify-between">
-          <div className="flex  w-[200px]  xs:pl-[30px] pl-[20px] items-center">
-            <Image
+          <div className="flex relative w-[200px]  xs:pl-[30px] pl-[20px] items-center">
+            {/* <Image
               alt=""
               loading="lazy"
+              className="xs:h-[70%] xs:w-[70%] h-[60%] w-[60%] object-contain "
+              src={logo}
+            /> */}
+            <OptimizeImage
+              alt=""
               className="xs:h-[70%] xs:w-[70%] h-[60%] w-[60%] object-contain "
               src={logo}
             />
@@ -99,12 +105,6 @@ const Navigation = forwardRef(
                 {section.name}
               </div>
             ))}
-            <Link
-              href={"/docs"}
-              className="flex mx-2 font-[500] my-4  text-[6px] xs:text-[7px] sm:text-[10px] md:text-[14px] xl:text-[16px] md:mx-4 md:hover:border-b-[3px] md:hover:border-[black] border-b-[3px] border-transparent pt-1 duration-700 cursor-pointer"
-            >
-              Docs
-            </Link>
           </div>
         </div>
 

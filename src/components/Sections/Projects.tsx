@@ -6,10 +6,12 @@ import ute from "../../../public/projects/ute.png";
 import stationary from "../../../public/projects/stationary.png";
 import pikdy from "../../../public/projects/pikdy.png";
 import ncloud from "../../../public/projects/ncloud.png";
+import digitz from "../../../public/projects/digitz.png";
 
 import Bar from "@/components/Standalone/Bar";
 import Link from "next/link";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import OptimizeImage from "../Standalone/OptimizeImage";
 
 //import vid from "../../../public/vid.mp4"
 
@@ -30,11 +32,19 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
   const myprojects = [
     {
       projectLogo: ncloud,
-      projectName: "eCom CMS with Next.js",
+      projectName: "Classified with Next.js",
       projectType: "Professional Project (ncloud solutions)",
-      frameworks: "Next.js , MongoDB , Auth.js , Hook-Form",
-      contribution: 99,
+      frameworks: "Next.js , MongoDB ,  Redux , Onepay, Auth.js",
+      contribution: 50,
       url: "ongoing",
+    },
+    {
+      projectLogo: digitz,
+      projectName: "Digitz",
+      projectType: "Professional Project (ncloud solutions)",
+      frameworks: "Next.js , MongoDB , Redux , Onepay, Auth.js",
+      contribution: 99,
+      url: "https://digitz.lk/",
     },
     {
       projectLogo: tblogo,
@@ -105,7 +115,12 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
             )}
 
             <div className="absolute  right-3 top-3 xxs:size-[50px] size-[40px]  xs:hidden  rounded-full xs:border-[3px] border-[1px] border-white flex justify-center items-center xxs:p-1 p-[2px] shadow-md">
-              <Image
+              {/* <Image
+                src={myproject.projectLogo}
+                alt=""
+                className="object-cover"
+              /> */}
+              <OptimizeImage
                 src={myproject.projectLogo}
                 alt=""
                 className="object-cover"
