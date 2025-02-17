@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
-  
-  background-color:#ededed;
-    
+  background-color: #ededed;
 }
-
 
 @layer utilities {
   .box-custom {
-    @apply  w-[100%] h-[60px] text-[14px] xxs:text-[16px] xs:text-[20px] text-[black] font-[600] flex items-center ; 
+    @apply w-[100%] h-[60px] text-[14px] xxs:text-[16px] xs:text-[20px] text-[black] font-[600] flex items-center;
   }
-} 
+
+  .triangle {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: #bbbdbf;
+    border-radius: 15px; /* Apply rounded corners here */
+  }
+}

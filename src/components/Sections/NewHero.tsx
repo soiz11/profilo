@@ -22,6 +22,7 @@ const NewHero = () => {
             className="absolute xl:h-[500px] lg:h-[450px] sm:h-[400px] h-[300px] w-fit -bottom-[0px] bxs:bottom-[30px] sm:bottom-[30px] midwidth:-bottom-[100px] 2xl:-bottom-[60px] -translate-x-1/2 left-1/2 z-20"
           /> */}
           <OptimizeImage
+            special={true}
             src={myimg3}
             alt="Sohan Prabhath Weerasinghe"
             className="absolute xl:h-[500px] lg:h-[450px] sm:h-[400px] h-[300px] w-fit -bottom-[0px] bxs:bottom-[30px] sm:bottom-[30px] midwidth:-bottom-[100px] 2xl:-bottom-[60px] -translate-x-1/2 left-1/2 z-20"
