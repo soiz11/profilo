@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,jsx,ts,tsx}", // Include all JavaScript and TypeScript files in the src folder
+    "./public/**/*.html", // Include HTML files in the public folder
+    "./pages/**/*.{js,jsx,ts,tsx}", // Include pages if you are using Next.js
+    "./components/**/*.{js,jsx,ts,tsx}", // Include components if you are using a specific folder for them
   ],
   theme: {
     extend: {
@@ -89,12 +90,23 @@ module.exports = {
             letterSpacing: "normal",
           },
         },
+
+        docslider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
 
       animation: {
+        docslider: "docslider 20s linear infinite",
         switching: "switching 6s ease-out infinite alternate",
         loading: "loading 4s cubic-bezier(0.4, 0, 0.2, 1) forwards",
         letterspace: "letterspace 3s ease-in-out infinite",
+      },
+
+      boxShadow: {
+        docslider:
+          "inset 10px 0 55px -10px rgba(0, 0, 0, 0.5), inset -10px 0 55px -10px rgba(0, 0, 0, 0.5)",
       },
     },
   },

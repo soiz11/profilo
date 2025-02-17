@@ -1,8 +1,14 @@
-import React, { forwardRef, useState } from "react";
+import React, { ForwardedRef, forwardRef, RefObject, useState } from "react";
 import Image from "next/image";
-import logo from "@/public/branding/sohan.webp";
+import logo from "../../../public/branding/sohan.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiSolidDownArrow } from "react-icons/bi";
+import { url } from "inspector";
+import Link from "next/link";
+import OptimizeImage from "../Standalone/OptimizeImage";
+
+// aboutRef: ForwardedRef<HTMLDivElement>
+export type ScrollFunction = (ref: React.RefObject<HTMLElement>) => void;
 
 const Navigation = forwardRef(
   ({
@@ -13,6 +19,14 @@ const Navigation = forwardRef(
     projectsRef,
     contentsRef,
     experienceRef,
+  }: {
+    scrollToSection: ScrollFunction;
+    scrollToTop: () => void;
+    aboutRef: React.RefObject<HTMLElement>;
+    skillsRef: React.RefObject<HTMLElement>;
+    projectsRef: React.RefObject<HTMLElement>;
+    contentsRef: React.RefObject<HTMLElement>;
+    experienceRef: React.RefObject<HTMLElement>;
   }) => {
     const [mobileNavActive, setMobileNavActive] = useState(false);
 
@@ -39,7 +53,7 @@ const Navigation = forwardRef(
       },
     ];
 
-    const pcHandleClick = (url) => {
+    const pcHandleClick = (url: RefObject<HTMLElement>) => {
       if (url != aboutRef) {
         return scrollToSection(url);
       }
@@ -47,7 +61,7 @@ const Navigation = forwardRef(
       return scrollToTop();
     };
 
-    const mobileOnClickHandle = (url) => {
+    const mobileOnClickHandle = (url: RefObject<HTMLElement>) => {
       if (url != aboutRef) {
         scrollToSection(url);
         setMobileNavActive(!mobileNavActive);
@@ -60,10 +74,15 @@ const Navigation = forwardRef(
     return (
       <>
         <div className="flex first-letter bg-[#93939311] xs:w-[80vw] w-[85vw] backdrop-blur-xl rounded-md shadow-md fixed z-50 mt-2 xl:mb-4 border-2 border-[white] justify-between">
-          <div className="flex  w-[200px]  xs:pl-[30px] pl-[20px] items-center">
-            <Image
+          <div className="flex relative w-[200px]  xs:pl-[30px] pl-[20px] items-center">
+            {/* <Image
               alt=""
               loading="lazy"
+              className="xs:h-[70%] xs:w-[70%] h-[60%] w-[60%] object-contain "
+              src={logo}
+            /> */}
+            <OptimizeImage
+              alt=""
               className="xs:h-[70%] xs:w-[70%] h-[60%] w-[60%] object-contain "
               src={logo}
             />
@@ -98,12 +117,19 @@ const Navigation = forwardRef(
           {sections.map((section, index) => (
             <div
               onClick={() => mobileOnClickHandle(section.url)}
-              className="flex justify-center mx-4  font-[500] my-4 text-[14px] md:mx-4  cursor-pointer "
+              className="flex justify-center mx-4  font-[500] my-3 text-[14px] md:mx-4  cursor-pointer "
               key={index}
             >
               {section.name}
             </div>
           ))}
+
+          <Link
+            href={"/docs"}
+            className="flex justify-center mx-4  font-[500] my-3 text-[14px] md:mx-4  cursor-pointer "
+          >
+            Docs
+          </Link>
         </div>
       </>
     );

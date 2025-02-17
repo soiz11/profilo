@@ -1,12 +1,11 @@
 import React from "react";
-import myimg from "@/public/branding/web_img.webp";
-import myimg2 from "@/public/branding/web_img2.png";
-import myimg3 from "@/public/branding/web_img3.png";
+import myimg3 from "../../../public/branding/web_img3.png";
 import Image from "next/image";
 import NewNamecard from "../Standalone/NewNameCard";
 import Slider from "../Standalone/Slider";
 import NewSocial from "../Standalone/NewSocial";
 import OnlyName from "../Standalone/OnlyName";
+import OptimizeImage from "../Standalone/OptimizeImage";
 
 const NewHero = () => {
   return (
@@ -17,7 +16,12 @@ const NewHero = () => {
           <OnlyName className="absolute xs:flex-col flex-row gap-x-2 z-30 sm:-top-[130px] xs:-top-[90px] top-[190px] leading-[30px] bxs:leading-[25px] sm:leading-[40px]" />
         </div>
         <div className="relative  w-fit">
-          <Image
+          {/* <Image
+            src={myimg3}
+            alt="Sohan Prabhath Weerasinghe"
+            className="absolute xl:h-[500px] lg:h-[450px] sm:h-[400px] h-[300px] w-fit -bottom-[0px] bxs:bottom-[30px] sm:bottom-[30px] midwidth:-bottom-[100px] 2xl:-bottom-[60px] -translate-x-1/2 left-1/2 z-20"
+          /> */}
+          <OptimizeImage
             src={myimg3}
             alt="Sohan Prabhath Weerasinghe"
             className="absolute xl:h-[500px] lg:h-[450px] sm:h-[400px] h-[300px] w-fit -bottom-[0px] bxs:bottom-[30px] sm:bottom-[30px] midwidth:-bottom-[100px] 2xl:-bottom-[60px] -translate-x-1/2 left-1/2 z-20"
