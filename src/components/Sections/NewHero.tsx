@@ -1,6 +1,5 @@
 import React from "react";
 import myimg3 from "../../../public/branding/web_img3.png";
-import Image from "next/image";
 import NewNamecard from "../Standalone/NewNameCard";
 import Slider from "../Standalone/Slider";
 import NewSocial from "../Standalone/NewSocial";
