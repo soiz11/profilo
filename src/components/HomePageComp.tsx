@@ -11,7 +11,7 @@ import Loader from "@/components/Sections/Loader";
 import useWindowSize from "@/hooks/useWindowSize";
 
 const HomePageComp = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [windowWidth, windowHeight] = useWindowSize();
 
   const size = windowWidth >= 940 ? 100 : 70;
@@ -56,26 +56,27 @@ const HomePageComp = () => {
 
   // console.log(loading);
 
-  useEffect(() => {
-    const hideLoader = () => {
-      setLoading(false);
-    };
+  //--loader------------------
+  // useEffect(() => {
+  //   const hideLoader = () => {
+  //     setLoading(false);
+  //   };
 
-    // Simulating a delay for testing purposes
-    const timeoutId = setTimeout(() => {
-      hideLoader();
-    }, 4000);
+  //   // Simulating a delay for testing purposes
+  //   const timeoutId = setTimeout(() => {
+  //     hideLoader();
+  //   }, 4000);
 
-    // Cleanup function to clear the timeout
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
+  //   // Cleanup function to clear the timeout
+  //   return () => {
+  //     clearTimeout(timeoutId);
+  //   };
+  // }, []);
 
   // console.log(loading);
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       {/* <Loader className={`loader ${loading ? '' : 'hidden'}`} /> */}
       {/*       
           <div className= 'flex flex-col justify-center w-[100%] items-center top-0'> */}

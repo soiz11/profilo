@@ -7,6 +7,7 @@ import stationary from "../../../public/projects/stationary.png";
 import pikdy from "../../../public/projects/pikdy.png";
 import ncloud from "../../../public/projects/ncloud.png";
 import digitz from "../../../public/projects/digitz.png";
+import cabs from "../../../public/projects/cabs.png";
 
 import Bar from "@/components/Standalone/Bar";
 import Link from "next/link";
@@ -35,7 +36,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
       projectName: "Classified with Next.js",
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , MongoDB ,  Redux , Onepay, Auth.js",
-      contribution: 50,
+      contribution: 70,
       url: "ongoing",
     },
     {
@@ -47,11 +48,19 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
       url: "https://digitz.lk/",
     },
     {
+      projectLogo: cabs,
+      projectName: "Airport Cabs",
+      projectType: "Professional Project (ncloud solutions)",
+      frameworks: "Next.js , NodeMailer, Google Place Api",
+      contribution: 99,
+      url: "https://airportcab.lk/",
+    },
+    {
       projectLogo: tblogo,
       projectName: "Tour Booking Sri Lanka",
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , NodeMailer, Google Place Api",
-      contribution: 95,
+      contribution: 99,
       url: "https://www.tourbookingsrilanka.com/",
     },
     {
