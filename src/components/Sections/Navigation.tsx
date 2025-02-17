@@ -1,10 +1,6 @@
-import React, { ForwardedRef, forwardRef, RefObject, useState } from "react";
-import Image from "next/image";
+import React, { forwardRef, RefObject, useState } from "react";
 import logo from "../../../public/branding/sohan.webp";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { BiSolidDownArrow } from "react-icons/bi";
-import { url } from "inspector";
-import Link from "next/link";
 import OptimizeImage from "../Standalone/OptimizeImage";
 
 // aboutRef: ForwardedRef<HTMLDivElement>
@@ -124,12 +120,12 @@ const Navigation = forwardRef(
             </div>
           ))}
 
-          <Link
+          {/* <Link
             href={"/docs"}
             className="flex justify-center mx-4  font-[500] my-3 text-[14px] md:mx-4  cursor-pointer "
           >
             Docs
-          </Link>
+          </Link> */}
         </div>
       </>
     );
