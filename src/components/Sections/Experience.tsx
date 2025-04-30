@@ -3,6 +3,7 @@ import ncloud from "../../../public/companies/ncloud.png";
 import itum from "../../../public/companies/itum.png";
 import Image from "next/image";
 import Link from "next/link";
+import OptimizeImage from "../Standalone/OptimizeImage";
 
 const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
   const experiences = [
@@ -55,11 +56,11 @@ const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
             <Link
               href={experience.url}
               target="_blank"
-              className={` ${
-                experience.extra ? "border-gray-800" : "border-white"
+              className={`relative ${
+                experience.extra ? "border-gray-600" : "border-white"
               } z-20 bg-background bigmd:size-[100px] xs:size-[80px] xxs:size-[70px] size-[60px] overflow-hidden rounded-full xxs:border-[4px] border-[6px]  shadow-md`}
             >
-              <Image
+              <OptimizeImage
                 src={experience.companyLogo}
                 alt="logo of the company"
                 className="size-[100%] object-contain xs:p-2 p-[6px]"
