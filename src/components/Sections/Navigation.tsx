@@ -70,7 +70,7 @@ const Navigation = forwardRef(
     return (
       <>
         <div className="flex first-letter bg-[#93939311] xs:w-[80vw] w-[85vw] backdrop-blur-xl rounded-md shadow-md fixed z-50 mt-2 xl:mb-4 border-2 border-[white] justify-between">
-          <div className="flex relative w-[200px]  xs:pl-[30px] pl-[20px] items-center">
+          <div className="flex justify-start items-center relative w-[200px]  xs:pl-[30px] pl-[20px]">
             {/* <Image
               alt=""
               loading="lazy"
@@ -81,6 +81,7 @@ const Navigation = forwardRef(
               alt=""
               className="xs:h-[70%] xs:w-[70%] h-[60%] w-[60%] object-contain "
               src={logo}
+              nav
             />
           </div>
 
