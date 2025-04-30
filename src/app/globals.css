@@ -13,7 +13,8 @@ body {
 
   .triangle {
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    background-color: #bbbdbf;
+    background-color: #9a9c9f;
     border-radius: 15px; /* Apply rounded corners here */
+    box-shadow: 2px 2px 10px 10px;
   }
 }

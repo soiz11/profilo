@@ -1,13 +1,14 @@
 "use client";
 import Image from "next/image";
-import React, { ForwardedRef, forwardRef } from "react";
-import tblogo from "../../../public/projects/tblogo.png";
+import React, { forwardRef } from "react";
+import taxiairportlogo from "../../../public/projects/taxiairport-logo.png";
+
 import ute from "../../../public/projects/ute.png";
 import stationary from "../../../public/projects/stationary.png";
 import pikdy from "../../../public/projects/pikdy.png";
 import ncloud from "../../../public/projects/ncloud.png";
 import digitz from "../../../public/projects/digitz.png";
-import cabs from "../../../public/projects/cabs.png";
+import cabs from "../../../public/projects/airportcab-logo.png";
 
 import Bar from "@/components/Standalone/Bar";
 import Link from "next/link";
@@ -49,19 +50,19 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
     },
     {
       projectLogo: cabs,
-      projectName: "Airport Cabs",
+      projectName: "Airport Cabs LK",
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , NodeMailer, Google Place Api",
       contribution: 99,
       url: "https://airportcab.lk/",
     },
     {
-      projectLogo: tblogo,
-      projectName: "Tour Booking Sri Lanka",
+      projectLogo: taxiairportlogo,
+      projectName: "Taxi Airport LK",
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , NodeMailer, Google Place Api",
       contribution: 99,
-      url: "https://www.tourbookingsrilanka.com/",
+      url: "https://www.taxiairport.lk/",
     },
     {
       projectLogo: ute,
@@ -129,18 +130,18 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
                 alt=""
                 className="object-cover"
               /> */}
+              {/* <OptimizeImage
+                src={myproject.projectLogo}
+                alt=""
+                className="object-cover"
+              /> */}
+            </div>
+
+            <div className="relative 3xl:size-[150px] 2xl:size-[170px] xl:size-[150px] bigmd:size-[180px] bigsm:size-[150px] bxs:size-[130px] xs:size-[80px]  hidden  xl:my-0  bigmd:my-5 my-0 rounded-full border-[3px] border-white  xs:flex justify-center items-center p-1 shadow-md">
               <OptimizeImage
                 src={myproject.projectLogo}
                 alt=""
                 className="object-cover"
-              />
-            </div>
-
-            <div className="3xl:size-[150px] 2xl:size-[170px] xl:size-[150px] bigmd:size-[180px] bigsm:size-[150px] bxs:size-[130px] xs:size-[80px]  hidden  xl:my-0  bigmd:my-5 my-0 rounded-full border-[3px] border-white  xs:flex justify-center items-center p-1 shadow-md">
-              <Image
-                src={myproject.projectLogo}
-                alt=""
-                className=" object-cover"
               />
             </div>
             <div className="flex flex-col gap-y-[10px] xl:mb-0 bigmd:mb-5 mb-0 z-10">
