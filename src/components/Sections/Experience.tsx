@@ -58,7 +58,7 @@ const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
               target="_blank"
               className={`relative ${
                 experience.extra ? "border-gray-600" : "border-white"
-              } z-20 bg-background bigmd:size-[100px] xs:size-[80px] xxs:size-[70px] size-[60px] overflow-hidden rounded-full xxs:border-[4px] border-[6px]  shadow-md`}
+              } z-20 bg-background bigmd:size-[100px] xs:size-[80px] xxs:size-[70px] size-[60px] overflow-hidden rounded-full border-2 lg:border-4  shadow-md`}
             >
               <OptimizeImage
                 src={experience.companyLogo}
