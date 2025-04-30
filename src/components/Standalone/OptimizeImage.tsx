@@ -7,11 +7,13 @@ const OptimizeImage = ({
   className,
   alt,
   special,
+  nav = false,
 }: {
   alt?: string;
   src: string | StaticImageData;
   className: string;
   special?: boolean;
+  nav?: boolean;
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -29,7 +31,13 @@ const OptimizeImage = ({
 
       {/* Show `</>` only if special is true and image is not yet loaded */}
       {!imageLoaded && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 xs:top-1/2 -translate-y-1/2 font-semibold z-20 ">
+        <div
+          className={` absolute  ${
+            nav ? "left-10" : "left-1/2 -translate-x-1/2"
+          } ${
+            special ? "top-0 xs:top-1/2" : "top-1/2"
+          } -translate-y-1/2 font-semibold z-20`}
+        >
           <div className="flex flex-col xs:scale-100 xl:scale-150 scale-105">
             {/* <div className="text-[40px] leading-[40px] mb-3"> {"<div>"}</div>
             <div className="text-[30px] leading-[30px] ml-[30px]">
@@ -47,7 +55,7 @@ const OptimizeImage = ({
               }`}
             >
               <div
-                className={`triangle bg-gray-100 blur-3xl ${
+                className={`triangle bg-gray-100 blur-3xl shadow-sm ${
                   special ? " w-[250px] h-[250px]" : "h-[30px] w-[30px]"
                 }`}
               ></div>
