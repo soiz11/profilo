@@ -46,15 +46,15 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , MongoDB , Redux , Onepay, Auth.js",
       contribution: 99,
-      url: "https://digitz.lk/",
+      url: "https://www.digitz.lk/",
     },
     {
       projectLogo: cabs,
-      projectName: "Airport Cabs LK",
+      projectName: "Airport Cab LK",
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , NodeMailer, Google Place Api",
       contribution: 99,
-      url: "https://airportcab.lk/",
+      url: "https://www.airportcab.lk/",
     },
     {
       projectLogo: taxiairportlogo,
