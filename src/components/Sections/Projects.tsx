@@ -34,10 +34,10 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
   const myprojects = [
     {
       projectLogo: ncloud,
-      projectName: "Classified with Next.js",
+      projectName: "Service-Based Merchant System",
       projectType: "Professional Project (ncloud solutions)",
-      frameworks: "Next.js , MongoDB ,  Redux , Onepay, Auth.js",
-      contribution: 70,
+      frameworks: "Next.js , MongoDB ,  Tanstack Query, Auth.js",
+      contribution: 99,
       url: "ongoing",
     },
     {
