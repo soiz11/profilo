@@ -163,17 +163,21 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
             </div>
             <div className="flex flex-col flex-1 gap-y-[10px] xl:mb-0 bigmd:mb-5 mb-0 z-10">
               <div>
-                <div className="text-[14px] font-semibold">Project Name</div>
-                <div className="text-[16px] leading-5">
+                <div className="xs:text-[16px] text-[14px] font-semibold">
+                  Project Name
+                </div>
+                <div className="xs:text-[20px] text-[18px] leading-5">
                   {myproject.projectName}
                 </div>
               </div>
               <div>
-                <div className="text-[14px] font-semibold">Project Type</div>
+                <div className="xs:text-[16px] text-[14px] font-semibold">
+                  Project Type
+                </div>
                 <div className="text-[14px]">{myproject.projectType}</div>
               </div>
               <div>
-                <div className="text-[14px] font-semibold">
+                <div className="xs:text-[16px] text-[14px] font-semibold">
                   Frameworks / Packages
                 </div>
                 <div className="text-[14px] text-[#5a5f61] ">
@@ -181,7 +185,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
                 </div>
               </div>
               <div>
-                <div className="text-[14px] font-semibold mb-1 flex justify-between">
+                <div className="xs:text-[16px] text-[14px] font-semibold mb-1 flex justify-between">
                   <div>Contribution</div>
                   <div>{myproject.contribution} %</div>
                 </div>

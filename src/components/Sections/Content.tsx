@@ -79,7 +79,7 @@ const Content = forwardRef<HTMLDivElement, {}>(
                         className="xxs:w-[100%] xxs:h-[100%] w-[0%] h-[0%] object-cover"
                       />
                     </div>
-                    <div className="xxs:mt-0 mt-[50px] font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px] flex items-end pl-2">
+                    <div className="xxs:mt-0 mt-[50px] font-medium py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px] flex items-end pl-2">
                       {creation.name}
                     </div>
                   </div>
@@ -97,7 +97,7 @@ const Content = forwardRef<HTMLDivElement, {}>(
                 <div className="flex mt-2 p-[16px]">
                   <div className="flex flex-col px-[10px] w-[100%]">
                     {/* <div className='font-[500] py-3 text-[20px] xs:text-[22px] xl:text-[24px] md:text-[26px]'>{creation.name}</div> */}
-                    <div className="text-[8px] xxs:text-[10px] xs:text-[12px] md:text-[14px] xl:text-[16px] text-[#5a5f61] flex pt-[40px]">
+                    <div className="text-[14px] xl:text-[18px] text-[#5a5f61] flex pt-[20px]">
                       {creation.description}
                     </div>
                   </div>
