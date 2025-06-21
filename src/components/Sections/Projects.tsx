@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React, { forwardRef } from "react";
 import taxiairportlogo from "../../../public/projects/taxiairport-logo.png";
 
@@ -7,7 +6,9 @@ import ute from "../../../public/projects/ute.png";
 import stationary from "../../../public/projects/stationary.png";
 import pikdy from "../../../public/projects/pikdy.png";
 import ncloud from "../../../public/projects/ncloud.png";
+import paint from "../../../public/projects/paint.png";
 import digitz from "../../../public/projects/digitz.png";
+import costiqo from "../../../public/projects/costiqo.png";
 import cabs from "../../../public/projects/airportcab-logo.png";
 
 import Bar from "@/components/Standalone/Bar";
@@ -34,11 +35,27 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
   const myprojects = [
     {
       projectLogo: ncloud,
-      projectName: "Service-Based Merchant System",
+      projectName: "Service One",
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , MongoDB ,  Tanstack Query, Auth.js",
       contribution: 99,
       url: "ongoing",
+    },
+    {
+      projectLogo: costiqo,
+      projectName: "Costiqo",
+      projectType: "Personal Project",
+      frameworks: "Next.js , MongoDB , Auth.js",
+      contribution: 99,
+      url: "https://www.costiqo.com/",
+    },
+    {
+      projectLogo: paint,
+      projectName: "My Online Paint",
+      projectType: "Personal Project",
+      frameworks: "Next.js , MongoDB , Auth.js",
+      contribution: 99,
+      url: "https://www.myonlinepaint.com/",
     },
     {
       projectLogo: digitz,
@@ -130,11 +147,11 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
                 alt=""
                 className="object-cover"
               /> */}
-              {/* <OptimizeImage
+              <OptimizeImage
                 src={myproject.projectLogo}
                 alt=""
                 className="object-cover"
-              /> */}
+              />
             </div>
 
             <div className="relative 3xl:size-[150px] 2xl:size-[170px] xl:size-[150px] bigmd:size-[180px] bigsm:size-[150px] bxs:size-[130px] xs:size-[80px]  hidden  xl:my-0  bigmd:my-5 my-0 rounded-full border-[3px] border-white  xs:flex justify-center items-center p-1 shadow-md">
@@ -144,33 +161,27 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
                 className="object-cover"
               />
             </div>
-            <div className="flex flex-col gap-y-[10px] xl:mb-0 bigmd:mb-5 mb-0 z-10">
+            <div className="flex flex-col flex-1 gap-y-[10px] xl:mb-0 bigmd:mb-5 mb-0 z-10">
               <div>
-                <div className="bxs:text-[14px] text-[12px] font-semibold">
-                  Project Name
-                </div>
-                <div className="bxs:text-[18px] text-[16px] leading-5">
+                <div className="text-[14px] font-semibold">Project Name</div>
+                <div className="text-[16px] leading-5">
                   {myproject.projectName}
                 </div>
               </div>
               <div>
-                <div className="bxs:text-[14px] text-[12px] font-semibold">
-                  Project Type
-                </div>
-                <div className="bxs:text-[14px] text-[12px]">
-                  {myproject.projectType}
-                </div>
+                <div className="text-[14px] font-semibold">Project Type</div>
+                <div className="text-[14px]">{myproject.projectType}</div>
               </div>
               <div>
-                <div className="bxs:text-[14px] text-[12px] font-semibold">
+                <div className="text-[14px] font-semibold">
                   Frameworks / Packages
                 </div>
-                <div className="bxs:text-[14px] text-[12px] ">
+                <div className="text-[14px] text-[#5a5f61] ">
                   {myproject.frameworks}
                 </div>
               </div>
               <div>
-                <div className="bxs:text-[14px] text-[12px] font-semibold mb-1 flex justify-between">
+                <div className="text-[14px] font-semibold mb-1 flex justify-between">
                   <div>Contribution</div>
                   <div>{myproject.contribution} %</div>
                 </div>
