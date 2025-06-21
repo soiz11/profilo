@@ -67,17 +67,17 @@ const Experience = forwardRef<HTMLDivElement, {}>((props, experienceRef) => {
               />
             </Link>
             <div className="flex flex-col flex-1">
-              <div className="font-[500] xs:text-[18px] xxs:text-[16px] text-[15px]">
+              <div className="font-[500] xs:text-[20px] text-[16px]">
                 {experience.position}
               </div>
               <Link
                 href={experience.url}
                 target="_blank"
-                className="font-[400] xs:text-[15px] xxs:text-[14px] text-[13px]"
+                className="font-[400] xs:text-[16px] text-[14px]"
               >
                 {experience.companyName}
               </Link>
-              <div className="font-[300] xs:text-[13px] xxs:text-[12px] text-[11px] text-secondary">
+              <div className="font-[300] xs:text-[14px] text-[12px] text-secondary">
                 {experience.duration}
               </div>
             </div>
