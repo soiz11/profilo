@@ -32,9 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta name="theme-color" content="#4285f4" />
-      <meta name="msapplication-navbutton-color" content="#4285f4" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4" />
+      <meta name="theme-color" content="#000000" />
+      <meta name="msapplication-navbutton-color" content="#000000" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
       <body className={barlow.className}>{children}</body>
     </html>
   );
