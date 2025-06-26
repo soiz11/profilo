@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Barlow } from "next/font/google";
 import "./globals.css";
+import { Viewport } from "next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,6 +12,11 @@ const barlow = Barlow({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600"],
 });
+
+export const viewport: Viewport = {
+  themeColor: "black",
+  // Other viewport settings...
+};
 
 export const metadata: Metadata = {
   title:
@@ -26,6 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="theme-color" content="#4285f4" />
+      <meta name="msapplication-navbutton-color" content="#4285f4" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4" />
       <body className={barlow.className}>{children}</body>
     </html>
   );
