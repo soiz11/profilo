@@ -138,7 +138,10 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
                 className="absolute right-3 top-3 z-10 cursor-pointer"
                 rel="noopener noreferrer"
               >
-                <FaCircleArrowRight size={22} className=" cursor-pointer" />
+                <FaCircleArrowRight
+                  size={22}
+                  className="cursor-pointer bg-white rounded-full xs:translate-x-0  xs:translate-y-0 translate-y-7 xs:p-0 p-[2px]"
+                />
               </a>
             )}
             <div className="absolute  right-3 top-3 xxs:size-[50px] size-[40px]  xs:hidden  rounded-full xs:border-[3px] border-[1px] border-white flex justify-center items-center xxs:p-1 p-[2px] shadow-md">
