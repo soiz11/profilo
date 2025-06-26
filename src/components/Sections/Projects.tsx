@@ -128,7 +128,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
             className="flex xl:flex-row bigmd:flex-col flex-row bg-[#ededed] border-2 shadow-lg rounded-lg border-[white]  overflow-hidden 3xl:p-5 2xl:px-10 bigmd:px-5 bigsm:px-10  px-5 py-5 3xl:gap-x-5 2xl:gap-x-10 bigmd:gap-x-5 bigsm:gap-x-10 gap-x-5 items-center relative"
           >
             {myproject.url == "ongoing" ? (
-              <div className="text-[14px] text-white bg-black rounded-md px-2 py-[2px] absolute right-3 top-3 z-10">
+              <div className="xs:text-[14px] text-[12px] text-white bg-black rounded-md xs:px-2 px-1 py-[1px] xs:py-[2px] absolute xs:right-3 xs:top-3 xxs:top-12 top-11 right-2 xxs:right-3 z-10">
                 ongoing
               </div>
             ) : (
