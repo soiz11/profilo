@@ -8,7 +8,7 @@ const NewNamecard = () => {
         <OnlyName />
       </div>
 
-      <div className="text-justify text-[14px] xs:text-[18px] flex mt-3  mb-3 xl:mb-5  text-[#5a5f61] w-full">
+      <div className="text-justify text-[14px] xl:text-[18px] flex mt-3  mb-3 xl:mb-5  text-[#5a5f61] w-full">
         Software Engineer at nCloud Solutions with a strong passion for
         technology and innovation. With hands-on experience in software
         development, I thrive in dynamic and challenging environments. Dedicated
