@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Barlow } from "next/font/google";
 import "./globals.css";
 import { Viewport } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-2PEBZD20Q8" />
       <meta name="theme-color" content="#000000" />
       <meta name="msapplication-navbutton-color" content="#000000" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
