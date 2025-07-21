@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.4.2",
     "next": "14.0.3",
     "next-videos": "^1.4.1",
     "react": "^18",
