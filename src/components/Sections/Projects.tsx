@@ -6,6 +6,8 @@ import ute from "../../../public/projects/ute.png";
 import stationary from "../../../public/projects/stationary.png";
 import pikdy from "../../../public/projects/pikdy.png";
 import ncloud from "../../../public/projects/ncloud.png";
+import serviceq from "../../../public/projects/serviceq.png";
+import hawkjobz from "../../../public/projects/hawkjobz.png";
 import paint from "../../../public/projects/paint.png";
 import digitz from "../../../public/projects/digitz.png";
 import costiqo from "../../../public/projects/costiqo.png";
@@ -33,13 +35,29 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
   };
 
   const myprojects = [
+    // {
+    //   projectLogo: ncloud,
+    //   projectName: "POSeCOM",
+    //   projectType: "Professional Project (ncloud solutions)",
+    //   frameworks: "Next.js , MongoDB ,  Tanstack Query, Auth.js",
+    //   contribution: 99,
+    //   url: "ongoing",
+    // },
+    // {
+    //   projectLogo: hawkjobz,
+    //   projectName: "Hawk Jobz",
+    //   projectType: "Personal Project",
+    //   frameworks: "Next.js , Postgresql ,  Tanstack Query, Auth.js",
+    //   contribution: 99,
+    //   url: "https://www.hawkjobz.com/",
+    // },
     {
-      projectLogo: ncloud,
-      projectName: "Service One",
+      projectLogo: serviceq,
+      projectName: "ServiceQ",
       projectType: "Professional Project (ncloud solutions)",
       frameworks: "Next.js , MongoDB ,  Tanstack Query, Auth.js",
       contribution: 99,
-      url: "ongoing",
+      url: "https://www.serviceq.lk/",
     },
     {
       projectLogo: costiqo,
