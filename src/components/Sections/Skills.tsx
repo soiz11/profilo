@@ -14,6 +14,7 @@ import githubactions from "../../../public/skills/githubactions.png";
 import figmaim from "../../../public/skills/figma.webp";
 import psim from "../../../public/skills/ps.webp";
 import flutterweb from "../../../public/skills/flutter.webp";
+import postgres from "../../../public/skills/postgres.webp";
 import Bar from "@/components/Standalone/Bar";
 import OptimizeImage from "../Standalone/OptimizeImage";
 
@@ -63,6 +64,11 @@ const Skills = forwardRef<HTMLDivElement, {}>(
       {
         name: "MongoDB",
         url: mongoim,
+        amount: 75,
+      },
+      {
+        name: "PostgreSQL",
+        url: postgres,
         amount: 75,
       },
       {
