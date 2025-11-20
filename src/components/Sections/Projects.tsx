@@ -6,6 +6,7 @@ import ute from "../../../public/projects/ute.png";
 import stationary from "../../../public/projects/stationary.png";
 import pikdy from "../../../public/projects/pikdy.png";
 import ncloud from "../../../public/projects/ncloud.png";
+import posecom from "../../../public/projects/posecom-logo.png";
 import serviceq from "../../../public/projects/serviceq.png";
 import hawkjobz from "../../../public/projects/hawkjobz.png";
 import paint from "../../../public/projects/paint.png";
@@ -35,14 +36,14 @@ const Projects = forwardRef<HTMLDivElement, {}>((props, projectsRef) => {
   };
 
   const myprojects = [
-    // {
-    //   projectLogo: ncloud,
-    //   projectName: "POSeCOM",
-    //   projectType: "Professional Project (ncloud solutions)",
-    //   frameworks: "Next.js , MongoDB ,  Tanstack Query, Auth.js",
-    //   contribution: 99,
-    //   url: "ongoing",
-    // },
+    {
+      projectLogo: posecom,
+      projectName: "POSeCOM",
+      projectType: "Professional Project (ncloud solutions)",
+      frameworks: "Next.js , MongoDB ,  Tanstack Query, Auth.js",
+      contribution: 99,
+      url: "ongoing",
+    },
     {
       projectLogo: hawkjobz,
       projectName: "Hawk Jobz",
